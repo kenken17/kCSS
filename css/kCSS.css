@@ -50,6 +50,10 @@ table {
 body {
   height: 100vh; }
 
+.child, .container {
+  box-sizing: border-box;
+  flex: 1; }
+
 .container {
   box-sizing: border-box;
   display: flex;
@@ -73,24 +77,47 @@ body {
     .container.desktop-is-column, .container.d-is-column {
       flex-direction: column; } }
 
-.container .child {
-  box-sizing: border-box;
-  width: 100%; }
-
 @media (min-width: 0) {
   .container.mobile-is-hero, .container.m-is-hero {
-    height: 100vh; }
-    .container.mobile-is-hero > .child, .container.m-is-hero > .child {
-      align-self: stretch; } }
+    height: 100vh;
+    align-items: stretch; }
+    .container.mobile-is-hero > .child, .container.mobile-is-hero > .container, .container.m-is-hero > .child, .container.m-is-hero > .container {
+      align-self: stretch; }
+    .container.mobile-is-hero.mobile-is-column > .child, .container.mobile-is-hero.mobile-is-column > .container, .container.mobile-is-hero.m-is-column > .child, .container.mobile-is-hero.m-is-column > .container, .container.m-is-hero.mobile-is-column > .child, .container.m-is-hero.mobile-is-column > .container, .container.m-is-hero.m-is-column > .child, .container.m-is-hero.m-is-column > .container {
+      flex: 1; }
+    .container.mobile-is-hero.tablet-is-column > .child, .container.mobile-is-hero.tablet-is-column > .container, .container.mobile-is-hero.t-is-column > .child, .container.mobile-is-hero.t-is-column > .container, .container.m-is-hero.tablet-is-column > .child, .container.m-is-hero.tablet-is-column > .container, .container.m-is-hero.t-is-column > .child, .container.m-is-hero.t-is-column > .container {
+      flex: 1; }
+    .container.mobile-is-hero.desktop-is-column > .child, .container.mobile-is-hero.desktop-is-column > .container, .container.mobile-is-hero.d-is-column > .child, .container.mobile-is-hero.d-is-column > .container, .container.m-is-hero.desktop-is-column > .child, .container.m-is-hero.desktop-is-column > .container, .container.m-is-hero.d-is-column > .child, .container.m-is-hero.d-is-column > .container {
+      flex: 1; }
+    .container.mobile-is-hero.big-desktop-is-column > .child, .container.mobile-is-hero.big-desktop-is-column > .container, .container.mobile-is-hero.b-is-column > .child, .container.mobile-is-hero.b-is-column > .container, .container.m-is-hero.big-desktop-is-column > .child, .container.m-is-hero.big-desktop-is-column > .container, .container.m-is-hero.b-is-column > .child, .container.m-is-hero.b-is-column > .container {
+      flex: 1; } }
 @media (min-width: 600px) {
   .container.tablet-is-hero, .container.t-is-hero {
-    height: 100vh; }
-    .container.tablet-is-hero > .child, .container.t-is-hero > .child {
-      align-self: stretch; } }
+    height: 100vh;
+    align-items: stretch; }
+    .container.tablet-is-hero > .child, .container.tablet-is-hero > .container, .container.t-is-hero > .child, .container.t-is-hero > .container {
+      align-self: stretch; }
+    .container.tablet-is-hero.mobile-is-column > .child, .container.tablet-is-hero.mobile-is-column > .container, .container.tablet-is-hero.m-is-column > .child, .container.tablet-is-hero.m-is-column > .container, .container.t-is-hero.mobile-is-column > .child, .container.t-is-hero.mobile-is-column > .container, .container.t-is-hero.m-is-column > .child, .container.t-is-hero.m-is-column > .container {
+      flex: 1; }
+    .container.tablet-is-hero.tablet-is-column > .child, .container.tablet-is-hero.tablet-is-column > .container, .container.tablet-is-hero.t-is-column > .child, .container.tablet-is-hero.t-is-column > .container, .container.t-is-hero.tablet-is-column > .child, .container.t-is-hero.tablet-is-column > .container, .container.t-is-hero.t-is-column > .child, .container.t-is-hero.t-is-column > .container {
+      flex: 1; }
+    .container.tablet-is-hero.desktop-is-column > .child, .container.tablet-is-hero.desktop-is-column > .container, .container.tablet-is-hero.d-is-column > .child, .container.tablet-is-hero.d-is-column > .container, .container.t-is-hero.desktop-is-column > .child, .container.t-is-hero.desktop-is-column > .container, .container.t-is-hero.d-is-column > .child, .container.t-is-hero.d-is-column > .container {
+      flex: 1; }
+    .container.tablet-is-hero.big-desktop-is-column > .child, .container.tablet-is-hero.big-desktop-is-column > .container, .container.tablet-is-hero.b-is-column > .child, .container.tablet-is-hero.b-is-column > .container, .container.t-is-hero.big-desktop-is-column > .child, .container.t-is-hero.big-desktop-is-column > .container, .container.t-is-hero.b-is-column > .child, .container.t-is-hero.b-is-column > .container {
+      flex: 1; } }
 @media (min-width: 1200px) {
   .container.desktop-is-hero, .container.d-is-hero {
-    height: 100vh; }
-    .container.desktop-is-hero > .child, .container.d-is-hero > .child {
-      align-self: stretch; } }
+    height: 100vh;
+    align-items: stretch; }
+    .container.desktop-is-hero > .child, .container.desktop-is-hero > .container, .container.d-is-hero > .child, .container.d-is-hero > .container {
+      align-self: stretch; }
+    .container.desktop-is-hero.mobile-is-column > .child, .container.desktop-is-hero.mobile-is-column > .container, .container.desktop-is-hero.m-is-column > .child, .container.desktop-is-hero.m-is-column > .container, .container.d-is-hero.mobile-is-column > .child, .container.d-is-hero.mobile-is-column > .container, .container.d-is-hero.m-is-column > .child, .container.d-is-hero.m-is-column > .container {
+      flex: 1; }
+    .container.desktop-is-hero.tablet-is-column > .child, .container.desktop-is-hero.tablet-is-column > .container, .container.desktop-is-hero.t-is-column > .child, .container.desktop-is-hero.t-is-column > .container, .container.d-is-hero.tablet-is-column > .child, .container.d-is-hero.tablet-is-column > .container, .container.d-is-hero.t-is-column > .child, .container.d-is-hero.t-is-column > .container {
+      flex: 1; }
+    .container.desktop-is-hero.desktop-is-column > .child, .container.desktop-is-hero.desktop-is-column > .container, .container.desktop-is-hero.d-is-column > .child, .container.desktop-is-hero.d-is-column > .container, .container.d-is-hero.desktop-is-column > .child, .container.d-is-hero.desktop-is-column > .container, .container.d-is-hero.d-is-column > .child, .container.d-is-hero.d-is-column > .container {
+      flex: 1; }
+    .container.desktop-is-hero.big-desktop-is-column > .child, .container.desktop-is-hero.big-desktop-is-column > .container, .container.desktop-is-hero.b-is-column > .child, .container.desktop-is-hero.b-is-column > .container, .container.d-is-hero.big-desktop-is-column > .child, .container.d-is-hero.big-desktop-is-column > .container, .container.d-is-hero.b-is-column > .child, .container.d-is-hero.b-is-column > .container {
+      flex: 1; } }
 
 /*# sourceMappingURL=kCSS.css.map */

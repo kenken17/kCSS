@@ -4,9 +4,20 @@
             &.#{$bp}-is-hero,
             &.#{$code}-is-hero {
                 height: 100vh;
+                align-items: stretch;
 
                  > .child {
                     align-self: stretch;
+                }
+
+                // Only when hero meets column, we need to stretch their height
+                @each $bp, $code in $breakpoints {
+                    &.#{$bp}-is-column,
+                    &.#{$code}-is-column {
+                        > .child {
+                            flex: 1;
+                        }
+                    } 
                 }
             } 
         }
