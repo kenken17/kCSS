@@ -1,0 +1,21 @@
+$tablet: 600px !default;
+$desktop: 1200px !default;
+$big-screen: 1800px !default;
+
+$breakpoints: ('tablet', 'desktop', 'big-desktop');
+
+@mixin for-size($size) {
+    @if $size == tablet {
+        @media (min-width: $tablet) { 
+            @content;  
+        }
+    } @else if $size == desktop {
+        @media (min-width: $desktop) {
+            @content;
+        }
+    } @else if $size == big-screen {
+        @media (min-width: $bigscreen) {
+            @content;  
+        }
+    }
+}

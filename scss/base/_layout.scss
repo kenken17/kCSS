@@ -1,0 +1,27 @@
+.container {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+
+    &.has-child-left {
+        justify-content: flex-start;
+    }
+
+    @each $bp in $breakpoints {
+        &.#{$bp} {
+            @include for-size(#{$bp}) {
+                &.is-row {
+                    flex-direction: row;
+                } 
+            }
+        }
+    }
+
+    .child {
+        @extend %child;
+    }
+}
+
+%child {
+    width: 100%;
+}
