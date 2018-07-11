@@ -53,12 +53,21 @@ table {
   flex-direction: column; }
   .container.has-child-left {
     justify-content: flex-start; }
+  @media (min-width: 0) {
+    .container.mobile-is-row, .container.m-is-row {
+      flex-direction: row; }
+    .container.mobile-is-column, .container.m-is-column {
+      flex-direction: column; } }
   @media (min-width: 600px) {
-    .container.tablet.is-row {
-      flex-direction: row; } }
+    .container.tablet-is-row, .container.t-is-row {
+      flex-direction: row; }
+    .container.tablet-is-column, .container.t-is-column {
+      flex-direction: column; } }
   @media (min-width: 1200px) {
-    .container.desktop.is-row {
-      flex-direction: row; } }
+    .container.desktop-is-row, .container.d-is-row {
+      flex-direction: row; }
+    .container.desktop-is-column, .container.d-is-column {
+      flex-direction: column; } }
 
 .container .child {
   width: 100%; }

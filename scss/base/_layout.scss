@@ -7,13 +7,18 @@
         justify-content: flex-start;
     }
 
-    @each $bp in $breakpoints {
-        &.#{$bp} {
-            @include for-size(#{$bp}) {
-                &.is-row {
-                    flex-direction: row;
-                } 
-            }
+    @each $bp, $code in $breakpoints {
+        @include for-size(#{$bp}) {
+            &.#{$bp}-is-row,
+            &.#{$code}-is-row {
+                flex-direction: row;
+            } 
+
+            &.#{$bp}-is-column,
+            &.#{$code}-is-column {
+                flex-direction: column;
+            } 
+
         }
     }
 
