@@ -1,4 +1,4 @@
-div {
+*:not(path):not(body):not(html) {
     outline: 1px solid cyan;
     background-color:  hsla(210, 100%,  50%, 0.5) !important;
 }

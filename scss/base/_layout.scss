@@ -1,4 +1,5 @@
 .container {
+    box-sizing: border-box;
     display: flex;
     justify-content: space-around;
     flex-direction: column;
@@ -28,5 +29,6 @@
 }
 
 %child {
+    box-sizing: border-box;
     width: 100%;
 }

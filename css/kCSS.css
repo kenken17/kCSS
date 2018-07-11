@@ -48,6 +48,7 @@ table {
   border-spacing: 0; }
 
 .container {
+  box-sizing: border-box;
   display: flex;
   justify-content: space-around;
   flex-direction: column; }
@@ -70,6 +71,7 @@ table {
       flex-direction: column; } }
 
 .container .child {
+  box-sizing: border-box;
   width: 100%; }
 
 /*# sourceMappingURL=kCSS.css.map */
