@@ -1,4 +1,16 @@
 .child {
     box-sizing: border-box;
     flex: 1;
+
+    @for $i from 1 through $flex-size {
+
+        @each $bp, $code in $breakpoints {
+            @include for-size(#{$bp}) {
+                &.#{$bp}-is-#{$i},
+                &.#{$code}-is-#{$i} {
+                    flex: $i !important;
+                } 
+            }
+        }
+    }
 }

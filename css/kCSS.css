@@ -47,12 +47,117 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-body {
-  height: 100vh; }
-
 .child, .container {
   box-sizing: border-box;
   flex: 1; }
+  @media (min-width: 0) {
+    .child.mobile-is-1, .mobile-is-1.container, .child.m-is-1, .m-is-1.container {
+      flex: 1 !important; } }
+  @media (min-width: 600px) {
+    .child.tablet-is-1, .tablet-is-1.container, .child.t-is-1, .t-is-1.container {
+      flex: 1 !important; } }
+  @media (min-width: 1200px) {
+    .child.desktop-is-1, .desktop-is-1.container, .child.d-is-1, .d-is-1.container {
+      flex: 1 !important; } }
+  @media (min-width: 0) {
+    .child.mobile-is-2, .mobile-is-2.container, .child.m-is-2, .m-is-2.container {
+      flex: 2 !important; } }
+  @media (min-width: 600px) {
+    .child.tablet-is-2, .tablet-is-2.container, .child.t-is-2, .t-is-2.container {
+      flex: 2 !important; } }
+  @media (min-width: 1200px) {
+    .child.desktop-is-2, .desktop-is-2.container, .child.d-is-2, .d-is-2.container {
+      flex: 2 !important; } }
+  @media (min-width: 0) {
+    .child.mobile-is-3, .mobile-is-3.container, .child.m-is-3, .m-is-3.container {
+      flex: 3 !important; } }
+  @media (min-width: 600px) {
+    .child.tablet-is-3, .tablet-is-3.container, .child.t-is-3, .t-is-3.container {
+      flex: 3 !important; } }
+  @media (min-width: 1200px) {
+    .child.desktop-is-3, .desktop-is-3.container, .child.d-is-3, .d-is-3.container {
+      flex: 3 !important; } }
+  @media (min-width: 0) {
+    .child.mobile-is-4, .mobile-is-4.container, .child.m-is-4, .m-is-4.container {
+      flex: 4 !important; } }
+  @media (min-width: 600px) {
+    .child.tablet-is-4, .tablet-is-4.container, .child.t-is-4, .t-is-4.container {
+      flex: 4 !important; } }
+  @media (min-width: 1200px) {
+    .child.desktop-is-4, .desktop-is-4.container, .child.d-is-4, .d-is-4.container {
+      flex: 4 !important; } }
+  @media (min-width: 0) {
+    .child.mobile-is-5, .mobile-is-5.container, .child.m-is-5, .m-is-5.container {
+      flex: 5 !important; } }
+  @media (min-width: 600px) {
+    .child.tablet-is-5, .tablet-is-5.container, .child.t-is-5, .t-is-5.container {
+      flex: 5 !important; } }
+  @media (min-width: 1200px) {
+    .child.desktop-is-5, .desktop-is-5.container, .child.d-is-5, .d-is-5.container {
+      flex: 5 !important; } }
+  @media (min-width: 0) {
+    .child.mobile-is-6, .mobile-is-6.container, .child.m-is-6, .m-is-6.container {
+      flex: 6 !important; } }
+  @media (min-width: 600px) {
+    .child.tablet-is-6, .tablet-is-6.container, .child.t-is-6, .t-is-6.container {
+      flex: 6 !important; } }
+  @media (min-width: 1200px) {
+    .child.desktop-is-6, .desktop-is-6.container, .child.d-is-6, .d-is-6.container {
+      flex: 6 !important; } }
+  @media (min-width: 0) {
+    .child.mobile-is-7, .mobile-is-7.container, .child.m-is-7, .m-is-7.container {
+      flex: 7 !important; } }
+  @media (min-width: 600px) {
+    .child.tablet-is-7, .tablet-is-7.container, .child.t-is-7, .t-is-7.container {
+      flex: 7 !important; } }
+  @media (min-width: 1200px) {
+    .child.desktop-is-7, .desktop-is-7.container, .child.d-is-7, .d-is-7.container {
+      flex: 7 !important; } }
+  @media (min-width: 0) {
+    .child.mobile-is-8, .mobile-is-8.container, .child.m-is-8, .m-is-8.container {
+      flex: 8 !important; } }
+  @media (min-width: 600px) {
+    .child.tablet-is-8, .tablet-is-8.container, .child.t-is-8, .t-is-8.container {
+      flex: 8 !important; } }
+  @media (min-width: 1200px) {
+    .child.desktop-is-8, .desktop-is-8.container, .child.d-is-8, .d-is-8.container {
+      flex: 8 !important; } }
+  @media (min-width: 0) {
+    .child.mobile-is-9, .mobile-is-9.container, .child.m-is-9, .m-is-9.container {
+      flex: 9 !important; } }
+  @media (min-width: 600px) {
+    .child.tablet-is-9, .tablet-is-9.container, .child.t-is-9, .t-is-9.container {
+      flex: 9 !important; } }
+  @media (min-width: 1200px) {
+    .child.desktop-is-9, .desktop-is-9.container, .child.d-is-9, .d-is-9.container {
+      flex: 9 !important; } }
+  @media (min-width: 0) {
+    .child.mobile-is-10, .mobile-is-10.container, .child.m-is-10, .m-is-10.container {
+      flex: 10 !important; } }
+  @media (min-width: 600px) {
+    .child.tablet-is-10, .tablet-is-10.container, .child.t-is-10, .t-is-10.container {
+      flex: 10 !important; } }
+  @media (min-width: 1200px) {
+    .child.desktop-is-10, .desktop-is-10.container, .child.d-is-10, .d-is-10.container {
+      flex: 10 !important; } }
+  @media (min-width: 0) {
+    .child.mobile-is-11, .mobile-is-11.container, .child.m-is-11, .m-is-11.container {
+      flex: 11 !important; } }
+  @media (min-width: 600px) {
+    .child.tablet-is-11, .tablet-is-11.container, .child.t-is-11, .t-is-11.container {
+      flex: 11 !important; } }
+  @media (min-width: 1200px) {
+    .child.desktop-is-11, .desktop-is-11.container, .child.d-is-11, .d-is-11.container {
+      flex: 11 !important; } }
+  @media (min-width: 0) {
+    .child.mobile-is-12, .mobile-is-12.container, .child.m-is-12, .m-is-12.container {
+      flex: 12 !important; } }
+  @media (min-width: 600px) {
+    .child.tablet-is-12, .tablet-is-12.container, .child.t-is-12, .t-is-12.container {
+      flex: 12 !important; } }
+  @media (min-width: 1200px) {
+    .child.desktop-is-12, .desktop-is-12.container, .child.d-is-12, .d-is-12.container {
+      flex: 12 !important; } }
 
 .container {
   box-sizing: border-box;
