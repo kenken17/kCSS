@@ -2,13 +2,21 @@
   "name": "kcss",
   "version": "1.0.0",
   "description": "A simple flex based css framework",
-  "main": "index.js",
+  "main": "kCSS.scss",
   "directories": {
     "example": "examples"
   },
   "scripts": {
-    "build": "node-sass ./kCss.scss ./build/css/kCss.min.css --output-style compressed --source-map true",
+    "build": "npm run build-sass && npm run build-compressed",
+    "build-sass": "node-sass kCSS.scss css/kCSS.css --output-style expanded --source-map true",
+    "build-compressed": "node-sass kCSS.scss css/kCSS.min.css --output-style compressed --source-map true",
+    "watch": "npm run build-sass -- --watch",
+    "deploy": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kenken17/kCSS.git"
   },
   "author": "",
   "license": "ISC",
