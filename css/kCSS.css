@@ -47,8 +47,9 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-body {
-  height: 100vh; }
+html {
+  overflow-x: hidden;
+  overflow-y: scroll; }
 
 .child, .container {
   box-sizing: border-box;
@@ -186,46 +187,25 @@ body {
       flex-direction: column; } }
 
 @media (min-width: 0) {
-  .container.mobile-is-hero, .container.m-is-hero {
+  .container.mobile-is-full, .container.m-is-full {
     height: 100%;
-    align-items: stretch; }
-    .container.mobile-is-hero > .child, .container.mobile-is-hero > .container, .container.m-is-hero > .child, .container.m-is-hero > .container {
-      align-self: stretch; }
-    .container.mobile-is-hero.mobile-is-column > .child, .container.mobile-is-hero.mobile-is-column > .container, .container.mobile-is-hero.m-is-column > .child, .container.mobile-is-hero.m-is-column > .container, .container.m-is-hero.mobile-is-column > .child, .container.m-is-hero.mobile-is-column > .container, .container.m-is-hero.m-is-column > .child, .container.m-is-hero.m-is-column > .container {
-      flex: 1; }
-    .container.mobile-is-hero.tablet-is-column > .child, .container.mobile-is-hero.tablet-is-column > .container, .container.mobile-is-hero.t-is-column > .child, .container.mobile-is-hero.t-is-column > .container, .container.m-is-hero.tablet-is-column > .child, .container.m-is-hero.tablet-is-column > .container, .container.m-is-hero.t-is-column > .child, .container.m-is-hero.t-is-column > .container {
-      flex: 1; }
-    .container.mobile-is-hero.desktop-is-column > .child, .container.mobile-is-hero.desktop-is-column > .container, .container.mobile-is-hero.d-is-column > .child, .container.mobile-is-hero.d-is-column > .container, .container.m-is-hero.desktop-is-column > .child, .container.m-is-hero.desktop-is-column > .container, .container.m-is-hero.d-is-column > .child, .container.m-is-hero.d-is-column > .container {
-      flex: 1; }
-    .container.mobile-is-hero.big-desktop-is-column > .child, .container.mobile-is-hero.big-desktop-is-column > .container, .container.mobile-is-hero.b-is-column > .child, .container.mobile-is-hero.b-is-column > .container, .container.m-is-hero.big-desktop-is-column > .child, .container.m-is-hero.big-desktop-is-column > .container, .container.m-is-hero.b-is-column > .child, .container.m-is-hero.b-is-column > .container {
-      flex: 1; } }
+    align-items: stretch;
+    justify-content: space-between; }
+    .container.mobile-is-full > .child, .container.mobile-is-full > .container, .container.m-is-full > .child, .container.m-is-full > .container {
+      align-self: stretch; } }
 @media (min-width: 600px) {
-  .container.tablet-is-hero, .container.t-is-hero {
+  .container.tablet-is-full, .container.t-is-full {
     height: 100%;
-    align-items: stretch; }
-    .container.tablet-is-hero > .child, .container.tablet-is-hero > .container, .container.t-is-hero > .child, .container.t-is-hero > .container {
-      align-self: stretch; }
-    .container.tablet-is-hero.mobile-is-column > .child, .container.tablet-is-hero.mobile-is-column > .container, .container.tablet-is-hero.m-is-column > .child, .container.tablet-is-hero.m-is-column > .container, .container.t-is-hero.mobile-is-column > .child, .container.t-is-hero.mobile-is-column > .container, .container.t-is-hero.m-is-column > .child, .container.t-is-hero.m-is-column > .container {
-      flex: 1; }
-    .container.tablet-is-hero.tablet-is-column > .child, .container.tablet-is-hero.tablet-is-column > .container, .container.tablet-is-hero.t-is-column > .child, .container.tablet-is-hero.t-is-column > .container, .container.t-is-hero.tablet-is-column > .child, .container.t-is-hero.tablet-is-column > .container, .container.t-is-hero.t-is-column > .child, .container.t-is-hero.t-is-column > .container {
-      flex: 1; }
-    .container.tablet-is-hero.desktop-is-column > .child, .container.tablet-is-hero.desktop-is-column > .container, .container.tablet-is-hero.d-is-column > .child, .container.tablet-is-hero.d-is-column > .container, .container.t-is-hero.desktop-is-column > .child, .container.t-is-hero.desktop-is-column > .container, .container.t-is-hero.d-is-column > .child, .container.t-is-hero.d-is-column > .container {
-      flex: 1; }
-    .container.tablet-is-hero.big-desktop-is-column > .child, .container.tablet-is-hero.big-desktop-is-column > .container, .container.tablet-is-hero.b-is-column > .child, .container.tablet-is-hero.b-is-column > .container, .container.t-is-hero.big-desktop-is-column > .child, .container.t-is-hero.big-desktop-is-column > .container, .container.t-is-hero.b-is-column > .child, .container.t-is-hero.b-is-column > .container {
-      flex: 1; } }
+    align-items: stretch;
+    justify-content: space-between; }
+    .container.tablet-is-full > .child, .container.tablet-is-full > .container, .container.t-is-full > .child, .container.t-is-full > .container {
+      align-self: stretch; } }
 @media (min-width: 1200px) {
-  .container.desktop-is-hero, .container.d-is-hero {
+  .container.desktop-is-full, .container.d-is-full {
     height: 100%;
-    align-items: stretch; }
-    .container.desktop-is-hero > .child, .container.desktop-is-hero > .container, .container.d-is-hero > .child, .container.d-is-hero > .container {
-      align-self: stretch; }
-    .container.desktop-is-hero.mobile-is-column > .child, .container.desktop-is-hero.mobile-is-column > .container, .container.desktop-is-hero.m-is-column > .child, .container.desktop-is-hero.m-is-column > .container, .container.d-is-hero.mobile-is-column > .child, .container.d-is-hero.mobile-is-column > .container, .container.d-is-hero.m-is-column > .child, .container.d-is-hero.m-is-column > .container {
-      flex: 1; }
-    .container.desktop-is-hero.tablet-is-column > .child, .container.desktop-is-hero.tablet-is-column > .container, .container.desktop-is-hero.t-is-column > .child, .container.desktop-is-hero.t-is-column > .container, .container.d-is-hero.tablet-is-column > .child, .container.d-is-hero.tablet-is-column > .container, .container.d-is-hero.t-is-column > .child, .container.d-is-hero.t-is-column > .container {
-      flex: 1; }
-    .container.desktop-is-hero.desktop-is-column > .child, .container.desktop-is-hero.desktop-is-column > .container, .container.desktop-is-hero.d-is-column > .child, .container.desktop-is-hero.d-is-column > .container, .container.d-is-hero.desktop-is-column > .child, .container.d-is-hero.desktop-is-column > .container, .container.d-is-hero.d-is-column > .child, .container.d-is-hero.d-is-column > .container {
-      flex: 1; }
-    .container.desktop-is-hero.big-desktop-is-column > .child, .container.desktop-is-hero.big-desktop-is-column > .container, .container.desktop-is-hero.b-is-column > .child, .container.desktop-is-hero.b-is-column > .container, .container.d-is-hero.big-desktop-is-column > .child, .container.d-is-hero.big-desktop-is-column > .container, .container.d-is-hero.b-is-column > .child, .container.d-is-hero.b-is-column > .container {
-      flex: 1; } }
+    align-items: stretch;
+    justify-content: space-between; }
+    .container.desktop-is-full > .child, .container.desktop-is-full > .container, .container.d-is-full > .child, .container.d-is-full > .container {
+      align-self: stretch; } }
 
 /*# sourceMappingURL=kCSS.css.map */
