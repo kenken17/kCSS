@@ -47,6 +47,9 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+body {
+  height: 100vh; }
+
 .container {
   box-sizing: border-box;
   display: flex;
@@ -73,5 +76,21 @@ table {
 .container .child {
   box-sizing: border-box;
   width: 100%; }
+
+@media (min-width: 0) {
+  .container.mobile-is-hero, .container.m-is-hero {
+    height: 100vh; }
+    .container.mobile-is-hero > .child, .container.m-is-hero > .child {
+      align-self: stretch; } }
+@media (min-width: 600px) {
+  .container.tablet-is-hero, .container.t-is-hero {
+    height: 100vh; }
+    .container.tablet-is-hero > .child, .container.t-is-hero > .child {
+      align-self: stretch; } }
+@media (min-width: 1200px) {
+  .container.desktop-is-hero, .container.d-is-hero {
+    height: 100vh; }
+    .container.desktop-is-hero > .child, .container.d-is-hero > .child {
+      align-self: stretch; } }
 
 /*# sourceMappingURL=kCSS.css.map */

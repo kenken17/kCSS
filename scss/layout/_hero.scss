@@ -1,0 +1,14 @@
+.container {
+    @each $bp, $code in $breakpoints {
+        @include for-size(#{$bp}) {
+            &.#{$bp}-is-hero,
+            &.#{$code}-is-hero {
+                height: 100vh;
+
+                 > .child {
+                    align-self: stretch;
+                }
+            } 
+        }
+    }
+}
