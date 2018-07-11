@@ -47,6 +47,9 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+body {
+  height: 100vh; }
+
 .child, .container {
   box-sizing: border-box;
   flex: 1; }
@@ -184,7 +187,7 @@ table {
 
 @media (min-width: 0) {
   .container.mobile-is-hero, .container.m-is-hero {
-    height: 100vh;
+    height: 100%;
     align-items: stretch; }
     .container.mobile-is-hero > .child, .container.mobile-is-hero > .container, .container.m-is-hero > .child, .container.m-is-hero > .container {
       align-self: stretch; }
@@ -198,7 +201,7 @@ table {
       flex: 1; } }
 @media (min-width: 600px) {
   .container.tablet-is-hero, .container.t-is-hero {
-    height: 100vh;
+    height: 100%;
     align-items: stretch; }
     .container.tablet-is-hero > .child, .container.tablet-is-hero > .container, .container.t-is-hero > .child, .container.t-is-hero > .container {
       align-self: stretch; }
@@ -212,7 +215,7 @@ table {
       flex: 1; } }
 @media (min-width: 1200px) {
   .container.desktop-is-hero, .container.d-is-hero {
-    height: 100vh;
+    height: 100%;
     align-items: stretch; }
     .container.desktop-is-hero > .child, .container.desktop-is-hero > .container, .container.d-is-hero > .child, .container.d-is-hero > .container {
       align-self: stretch; }

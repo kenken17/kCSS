@@ -3,7 +3,7 @@
         @include for-size(#{$bp}) {
             &.#{$bp}-is-hero,
             &.#{$code}-is-hero {
-                height: 100vh;
+                height: 100%;
                 align-items: stretch;
 
                  > .child {
