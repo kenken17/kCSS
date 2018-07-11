@@ -2,15 +2,21 @@
     box-sizing: border-box;
     flex: 1;
 
-    @for $i from 1 through $flex-size {
-
-        @each $bp, $code in $breakpoints {
-            @include for-size(#{$bp}) {
+    @each $bp, $code in $breakpoints {
+        @include for-size(#{$bp}) {
+            // for child size
+            @for $i from 1 through $flex-size {
                 &.#{$bp}-is-#{$i},
                 &.#{$code}-is-#{$i} {
                     flex: $i !important;
                 } 
             }
+
+            // For child fixed size
+            &.#{$bp}-is-fixed,
+            &.#{$code}-is-fixed {
+                flex: none;
+            } 
         }
     }
 }

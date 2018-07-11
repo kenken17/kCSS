@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../../css/kCSS.css">
+        <link rel="stylesheet" href="../../css/debug.css">
+        <title>Flex</title>
+    </head>
+    <body style="height: 100vh;">
+        <div class="container mobile-is-row mobile-is-full">
+            <div class="child mobile-is-fixed" style="width: 100px;">a</div>
+            <div class="child">b</div>
+            <div class="child desktop-is-2">
+                <div class="container mobile-is-full">
+                    <div class="child mobile-is-fixed" style="height: 100px;">c1</div>
+                    <div class="child">c2</div>
+                    <div class="child">c3</div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
