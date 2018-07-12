@@ -4,10 +4,16 @@
     @each $bp, $code in $breakpoints {
         @include for-size(#{$bp}) {
             // for child size
-            @for $i from 1 through $flex-size {
+            @for $i from 1 through $flex-col-size {
                 &.#{$bp}-is-#{$i},
                 &.#{$code}-is-#{$i} {
-                    flex: $i !important;
+                    flex: $i;
+
+                    &:only-child {
+                        width: 100%;
+                        height: calc(#{$i} / #{$flex-col-size} * 100%);
+                        flex: none;
+                    }
                 } 
             }
 
@@ -15,7 +21,12 @@
             &.#{$bp}-is-fixed,
             &.#{$code}-is-fixed {
                 flex: none;
-            } 
+            }
+
+            &.#{$bp}-is-full,
+            &.#{$code}-is-full {
+                width: 100%;
+            }
         }
     }
 }

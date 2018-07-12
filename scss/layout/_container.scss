@@ -2,23 +2,119 @@
 
 .container {
     display: flex;
-    justify-content: space-around;
     flex-direction: column;
-
-    &.has-child-left {
-        justify-content: flex-start;
-    }
 
     @each $bp, $code in $breakpoints {
         @include for-size(#{$bp}) {
             &.#{$bp}-is-row,
             &.#{$code}-is-row {
                 flex-direction: row;
+
+                > .child {
+                    @each $bp, $code in $breakpoints {
+                        @include for-size(#{$bp}) {
+                            // for child size
+                            @for $i from 1 through $flex-col-size {
+                                &.#{$bp}-is-#{$i},
+                                &.#{$code}-is-#{$i} {
+                                    &:only-child {
+                                        width: calc(#{$i} / #{$flex-col-size} * 100%);
+                                        height: 100%;
+                                        flex: none;
+                                    }
+                                } 
+                            }
+                        }
+
+                        &.#{$bp}-is-full,
+                        &.#{$code}-is-full {
+                            height: 100%;
+                        }
+                    }
+                }
+
+                @each $bp, $code in $breakpoints {
+                    &.#{$bp}-child-right,
+                    &.#{$code}-child-right {
+                        justify-content: flex-end;
+                    } 
+
+                    &.#{$bp}-child-left,
+                    &.#{$code}-child-left {
+                        justify-content: flex-start;
+                    } 
+                }
             } 
 
             &.#{$bp}-is-column,
             &.#{$code}-is-column {
                 flex-direction: column;
+
+                > .child {
+                    @each $bp, $code in $breakpoints {
+                        @include for-size(#{$bp}) {
+                            // for child size
+                            @for $i from 1 through $flex-col-size {
+                                &.#{$bp}-is-#{$i},
+                                &.#{$code}-is-#{$i} {
+                                    &:only-child {
+                                        width: 100%;
+                                        height: calc(#{$i} / #{$flex-col-size} * 100%);
+                                        flex: none;
+                                    }
+                                } 
+                            }
+                        }
+
+                        &.#{$bp}-is-full,
+                        &.#{$code}-is-full {
+                            width: 100%;
+                        }
+                    }
+                }
+                
+                @each $bp, $code in $breakpoints {
+                    &.#{$bp}-child-bottom,
+                    &.#{$code}-child-bottom {
+                        align-items: flex-end;
+                    } 
+
+                    &.#{$bp}-child-top,
+                    &.#{$code}-child-top {
+                        align-items: flex-start;
+                    } 
+                }
+            }
+
+            &.#{$bp}-is-full,
+            &.#{$code}-is-full {
+                height: 100%;
+            }
+
+            &.#{$bp}-child-centered,
+            &.#{$code}-child-centered {
+                align-items: center;
+                justify-content: center;
+            } 
+
+            &.#{$bp}-child-right,
+            &.#{$code}-child-right {
+                align-items: flex-end;
+            } 
+
+            &.#{$bp}-child-left,
+            &.#{$code}-child-left {
+                align-items: flex-start;
+            } 
+
+            &.#{$bp}-child-bottom,
+            &.#{$code}-child-bottom {
+                justify-content: flex-end;
+            } 
+
+            &.#{$bp}-child-top,
+            &.#{$code}-child-top {
+                justify-content: flex-start;
             } 
         }
     }
