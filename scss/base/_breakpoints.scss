@@ -3,13 +3,13 @@ $tablet: 600px !default;
 $desktop: 1200px !default;
 $big-screen: 1800px !default;
 
-$breakpoints: mobile tablet desktop big-desktop;
+$breakpoints: mobile tablet desktop big-screen;
 $breakpoints-value: $mobile $tablet $desktop $big-screen;
 
 @mixin for-size($breakpoint) {
     @each $key, $value in $breakpoints, $breakpoints-value {
-        @if $breakpoint == $key {
-            @media (min-width: $value) {
+        @if $breakpoint == #{$key} {
+            @media (min-width: #{$value}) {
                 @content;
             }
         }
