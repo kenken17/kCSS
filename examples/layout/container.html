@@ -7,15 +7,30 @@
         <link rel="stylesheet" href="../../css/debug.css">
         <title>Flex</title>
     </head>
+    <style type="text/css" media="screen">
+        .child-a,
+        .child-b {
+            height: 100px;
+        }
+
+        .child-c {
+            min-height: 100px;
+        }
+
+        .child-c-1,
+        .child-c-2 {
+            height: 100px;
+        }
+    </style>
     <body>
-        <div class="container mobile-is-row">
-            <div class="child">a</div>
-            <div class="child">b</div>
-            <div class="child">
-                <div class="container mobile-is-row">
-                    <div class="child">c1</div>
-                    <div class="child">c2</div>
-                </div>    
+        <div class="container main-container tablet-is-row">
+            <div class="child child-a">a</div>
+            <div class="child child-b">b</div>
+            <div class="child child-c">
+                <div class="container container-child-c tablet-is-row">
+                    <div class="child child-c-1">c1</div>
+                    <div class="child child-c-2">c2</div>
+                </div>
             </div>
         </div>
     </body>
