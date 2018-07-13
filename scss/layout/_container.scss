@@ -2,23 +2,103 @@
 
 .container {
     display: flex;
-    justify-content: space-around;
     flex-direction: column;
 
-    &.has-child-left {
-        justify-content: flex-start;
-    }
-
-    @each $bp, $code in $breakpoints {
+    @each $bp in $breakpoints {
         @include for-size(#{$bp}) {
-            &.#{$bp}-is-row,
-            &.#{$code}-is-row {
+            &.#{$bp}-is-row {
                 flex-direction: row;
+
+                > .child {
+                    @each $bp in $breakpoints {
+                        @include for-size(#{$bp}) {
+                            // for child size
+                            @for $i from 1 through $flex-col-size {
+                                &.#{$bp}-is-#{$i} {
+                                    &:only-child {
+                                        width: calc(#{$i} / #{$flex-col-size} * 100%);
+                                        height: 100%;
+                                        flex: none;
+                                    }
+                                } 
+                            }
+                        }
+
+                        &.#{$bp}-is-full {
+                            height: 100%;
+                        }
+                    }
+                }
+
+                @each $bp in $breakpoints {
+                    &.#{$bp}-child-right {
+                        justify-content: flex-end;
+                    } 
+
+                    &.#{$bp}-child-left {
+                        justify-content: flex-start;
+                    } 
+                }
             } 
 
-            &.#{$bp}-is-column,
-            &.#{$code}-is-column {
+            &.#{$bp}-is-column {
                 flex-direction: column;
+
+                > .child {
+                    @each $bp in $breakpoints {
+                        @include for-size(#{$bp}) {
+                            // for child size
+                            @for $i from 1 through $flex-col-size {
+                                &.#{$bp}-is-#{$i} {
+                                    &:only-child {
+                                        width: 100%;
+                                        height: calc(#{$i} / #{$flex-col-size} * 100%);
+                                        flex: none;
+                                    }
+                                } 
+                            }
+                        }
+
+                        &.#{$bp}-is-full {
+                            width: 100%;
+                        }
+                    }
+                }
+                
+                @each $bp in $breakpoints {
+                    &.#{$bp}-child-bottom {
+                        align-items: flex-end;
+                    } 
+
+                    &.#{$bp}-child-top {
+                        align-items: flex-start;
+                    } 
+                }
+            }
+
+            &.#{$bp}-is-full {
+                height: 100%;
+            }
+
+            &.#{$bp}-child-centered {
+                align-items: center;
+                justify-content: center;
+            } 
+
+            &.#{$bp}-child-right {
+                align-items: flex-end;
+            } 
+
+            &.#{$bp}-child-left {
+                align-items: flex-start;
+            } 
+
+            &.#{$bp}-child-bottom {
+                justify-content: flex-end;
+            } 
+
+            &.#{$bp}-child-top {
+                justify-content: flex-start;
             } 
         }
     }
