@@ -1,12 +1,11 @@
 .child {
     flex: 1;
 
-    @each $bp, $code in $breakpoints {
+    @each $bp in $breakpoints {
         @include for-size(#{$bp}) {
             // for child size
             @for $i from 1 through $flex-col-size {
-                &.#{$bp}-is-#{$i},
-                &.#{$code}-is-#{$i} {
+                &.#{$bp}-is-#{$i} {
                     flex: $i;
 
                     &:only-child {
@@ -18,13 +17,11 @@
             }
 
             // For child fixed size
-            &.#{$bp}-is-fixed,
-            &.#{$code}-is-fixed {
+            &.#{$bp}-is-fixed {
                 flex: none;
             }
 
-            &.#{$bp}-is-full,
-            &.#{$code}-is-full {
+            &.#{$bp}-is-full {
                 width: 100%;
             }
         }
