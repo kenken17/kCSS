@@ -20,7 +20,7 @@
                                         height: 100%;
                                         flex: none;
                                     }
-                                } 
+                                }
                             }
                         }
 
@@ -33,13 +33,13 @@
                 @each $bp in $breakpoints {
                     &.#{$bp}-child-right {
                         justify-content: flex-end;
-                    } 
+                    }
 
                     &.#{$bp}-child-left {
                         justify-content: flex-start;
-                    } 
+                    }
                 }
-            } 
+            }
 
             &.#{$bp}-is-column {
                 flex-direction: column;
@@ -55,7 +55,7 @@
                                         height: calc(#{$i} / #{$flex-col-size} * 100%);
                                         flex: none;
                                     }
-                                } 
+                                }
                             }
                         }
 
@@ -64,15 +64,15 @@
                         }
                     }
                 }
-                
+
                 @each $bp in $breakpoints {
                     &.#{$bp}-child-bottom {
                         align-items: flex-end;
-                    } 
+                    }
 
                     &.#{$bp}-child-top {
                         align-items: flex-start;
-                    } 
+                    }
                 }
             }
 
@@ -83,23 +83,23 @@
             &.#{$bp}-child-centered {
                 align-items: center;
                 justify-content: center;
-            } 
+            }
 
             &.#{$bp}-child-right {
                 align-items: flex-end;
-            } 
+            }
 
             &.#{$bp}-child-left {
                 align-items: flex-start;
-            } 
+            }
 
             &.#{$bp}-child-bottom {
                 justify-content: flex-end;
-            } 
+            }
 
             &.#{$bp}-child-top {
                 justify-content: flex-start;
-            } 
+            }
         }
     }
 

@@ -7,11 +7,11 @@ $breakpoints: mobile tablet desktop big-desktop;
 $breakpoints-value: $mobile $tablet $desktop $big-screen;
 
 @mixin for-size($breakpoint) {
-  @each $key, $value in $breakpoints, $breakpoints-value {
-    @if $breakpoint == $key {
-      @media (min-width: $value) { 
-        @content;
-      }
+    @each $key, $value in $breakpoints, $breakpoints-value {
+        @if $breakpoint == $key {
+            @media (min-width: $value) {
+                @content;
+            }
+        }
     }
-  }
 }
