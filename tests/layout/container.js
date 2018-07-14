@@ -152,7 +152,7 @@ module.exports = {
         client.end();
     },
 
-    "Mobile: Should see child-b as the second cell in a row"(client) {
+    "Tablet: Should see child-b as the second cell in a row"(client) {
         client
             .url("http://localhost:8080/examples/layout/container.html")
             .resizeWindow(600, 768)
@@ -175,7 +175,7 @@ module.exports = {
         client.end();
     },
 
-    "Mobile: Should see child-c as the third cell in the row"(client) {
+    "Tablet: Should see child-c as the third cell in the row"(client) {
         client
             .url("http://localhost:8080/examples/layout/container.html")
             .resizeWindow(600, 768)
@@ -198,7 +198,7 @@ module.exports = {
         client.end();
     },
 
-    "Mobile: Should see child-c-1 same as child-c but is half (100px)"(client) {
+    "Tablet: Should see child-c-1 same as child-c but is half (100px)"(client) {
         client
             .url("http://localhost:8080/examples/layout/container.html")
             .resizeWindow(600, 768)
@@ -221,7 +221,7 @@ module.exports = {
         client.end();
     },
 
-    "Mobile: Should see child-c-2 as the last cell on the right"(client) {
+    "Tablet: Should see child-c-2 as the last cell on the right"(client) {
         client
             .url("http://localhost:8080/examples/layout/container.html")
             .resizeWindow(600, 768)
