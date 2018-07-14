@@ -1,28 +1,28 @@
-.child {
-    flex: 1;
-
+%child {
     @each $bp in $breakpoints {
         @include for-size(#{$bp}) {
             // for child size
-            @for $i from 1 through $flex-col-size {
-                &.#{$bp}-is-#{$i} {
-                    flex: $i;
+            .child {
+                @for $i from 1 through $flex-col-size {
+                    &.#{$bp}-is-#{$i} {
+                        flex: $i;
 
-                    &:only-child {
-                        width: 100%;
-                        height: calc(#{$i} / #{$flex-col-size} * 100%);
-                        flex: none;
+                        &:only-child {
+                            width: 100%;
+                            height: calc(#{$i} / #{$flex-col-size} * 100%);
+                            flex: none;
+                        }
                     }
                 }
-            }
 
-            // For child fixed size
-            &.#{$bp}-is-fixed {
-                flex: none;
-            }
+                // For child fixed size
+                &.#{$bp}-is-fixed {
+                    flex: none;
+                }
 
-            &.#{$bp}-is-full {
-                width: 100%;
+                &.#{$bp}-is-full {
+                    width: 100%;
+                }
             }
         }
     }
