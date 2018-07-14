@@ -45,7 +45,7 @@
 
                 @each $bp_in, $v_in in $breakpoints {
                     // If the bp is the same no need to AND the same @media
-                    @if #{$v} == #{$v_in} {
+                    @if $bp == $bp_in {
                         & > .child {
                             // for child size
                             @include for-child-size(row, #{$bp});
@@ -84,7 +84,7 @@
 
                 @each $bp_in, $v_in in $breakpoints {
                     // If the bp is the same no need to AND the same @media
-                    @if #{$v} == #{$v_in} {
+                    @if $bp == $bp_in {
                         & > .child {
                             // for child size
                             @include for-child-size(column, #{$bp});

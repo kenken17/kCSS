@@ -561,195 +561,207 @@ html {
   .container.mobile-is-row > .child.mobile-is-full {
     height: 100%;
   }
-  .container.mobile-is-row > .child.mobile-is-1:only-child {
+}
+
+@media (min-width: 0) and (min-width: 600px) {
+  .container.mobile-is-row > .child.tablet-is-1:only-child {
     width: calc(1 / 12 * 100%);
     height: 100%;
     flex: none;
   }
-  .container.mobile-is-row > .child.mobile-is-2:only-child {
+  .container.mobile-is-row > .child.tablet-is-2:only-child {
     width: calc(2 / 12 * 100%);
     height: 100%;
     flex: none;
   }
-  .container.mobile-is-row > .child.mobile-is-3:only-child {
+  .container.mobile-is-row > .child.tablet-is-3:only-child {
     width: calc(3 / 12 * 100%);
     height: 100%;
     flex: none;
   }
-  .container.mobile-is-row > .child.mobile-is-4:only-child {
+  .container.mobile-is-row > .child.tablet-is-4:only-child {
     width: calc(4 / 12 * 100%);
     height: 100%;
     flex: none;
   }
-  .container.mobile-is-row > .child.mobile-is-5:only-child {
+  .container.mobile-is-row > .child.tablet-is-5:only-child {
     width: calc(5 / 12 * 100%);
     height: 100%;
     flex: none;
   }
-  .container.mobile-is-row > .child.mobile-is-6:only-child {
+  .container.mobile-is-row > .child.tablet-is-6:only-child {
     width: calc(6 / 12 * 100%);
     height: 100%;
     flex: none;
   }
-  .container.mobile-is-row > .child.mobile-is-7:only-child {
+  .container.mobile-is-row > .child.tablet-is-7:only-child {
     width: calc(7 / 12 * 100%);
     height: 100%;
     flex: none;
   }
-  .container.mobile-is-row > .child.mobile-is-8:only-child {
+  .container.mobile-is-row > .child.tablet-is-8:only-child {
     width: calc(8 / 12 * 100%);
     height: 100%;
     flex: none;
   }
-  .container.mobile-is-row > .child.mobile-is-9:only-child {
+  .container.mobile-is-row > .child.tablet-is-9:only-child {
     width: calc(9 / 12 * 100%);
     height: 100%;
     flex: none;
   }
-  .container.mobile-is-row > .child.mobile-is-10:only-child {
+  .container.mobile-is-row > .child.tablet-is-10:only-child {
     width: calc(10 / 12 * 100%);
     height: 100%;
     flex: none;
   }
-  .container.mobile-is-row > .child.mobile-is-11:only-child {
+  .container.mobile-is-row > .child.tablet-is-11:only-child {
     width: calc(11 / 12 * 100%);
     height: 100%;
     flex: none;
   }
-  .container.mobile-is-row > .child.mobile-is-12:only-child {
+  .container.mobile-is-row > .child.tablet-is-12:only-child {
     width: calc(12 / 12 * 100%);
     height: 100%;
     flex: none;
   }
-  .container.mobile-is-row > .child.mobile-is-full {
+  .container.mobile-is-row > .child.tablet-is-full {
     height: 100%;
   }
-  .container.mobile-is-row > .child.mobile-is-1:only-child {
+}
+
+@media (min-width: 0) and (min-width: 1200px) {
+  .container.mobile-is-row > .child.desktop-is-1:only-child {
     width: calc(1 / 12 * 100%);
     height: 100%;
     flex: none;
   }
-  .container.mobile-is-row > .child.mobile-is-2:only-child {
+  .container.mobile-is-row > .child.desktop-is-2:only-child {
     width: calc(2 / 12 * 100%);
     height: 100%;
     flex: none;
   }
-  .container.mobile-is-row > .child.mobile-is-3:only-child {
+  .container.mobile-is-row > .child.desktop-is-3:only-child {
     width: calc(3 / 12 * 100%);
     height: 100%;
     flex: none;
   }
-  .container.mobile-is-row > .child.mobile-is-4:only-child {
+  .container.mobile-is-row > .child.desktop-is-4:only-child {
     width: calc(4 / 12 * 100%);
     height: 100%;
     flex: none;
   }
-  .container.mobile-is-row > .child.mobile-is-5:only-child {
+  .container.mobile-is-row > .child.desktop-is-5:only-child {
     width: calc(5 / 12 * 100%);
     height: 100%;
     flex: none;
   }
-  .container.mobile-is-row > .child.mobile-is-6:only-child {
+  .container.mobile-is-row > .child.desktop-is-6:only-child {
     width: calc(6 / 12 * 100%);
     height: 100%;
     flex: none;
   }
-  .container.mobile-is-row > .child.mobile-is-7:only-child {
+  .container.mobile-is-row > .child.desktop-is-7:only-child {
     width: calc(7 / 12 * 100%);
     height: 100%;
     flex: none;
   }
-  .container.mobile-is-row > .child.mobile-is-8:only-child {
+  .container.mobile-is-row > .child.desktop-is-8:only-child {
     width: calc(8 / 12 * 100%);
     height: 100%;
     flex: none;
   }
-  .container.mobile-is-row > .child.mobile-is-9:only-child {
+  .container.mobile-is-row > .child.desktop-is-9:only-child {
     width: calc(9 / 12 * 100%);
     height: 100%;
     flex: none;
   }
-  .container.mobile-is-row > .child.mobile-is-10:only-child {
+  .container.mobile-is-row > .child.desktop-is-10:only-child {
     width: calc(10 / 12 * 100%);
     height: 100%;
     flex: none;
   }
-  .container.mobile-is-row > .child.mobile-is-11:only-child {
+  .container.mobile-is-row > .child.desktop-is-11:only-child {
     width: calc(11 / 12 * 100%);
     height: 100%;
     flex: none;
   }
-  .container.mobile-is-row > .child.mobile-is-12:only-child {
+  .container.mobile-is-row > .child.desktop-is-12:only-child {
     width: calc(12 / 12 * 100%);
     height: 100%;
     flex: none;
   }
-  .container.mobile-is-row > .child.mobile-is-full {
+  .container.mobile-is-row > .child.desktop-is-full {
     height: 100%;
   }
-  .container.mobile-is-row > .child.mobile-is-1:only-child {
+}
+
+@media (min-width: 0) and (min-width: 1800px) {
+  .container.mobile-is-row > .child.big-screen-is-1:only-child {
     width: calc(1 / 12 * 100%);
     height: 100%;
     flex: none;
   }
-  .container.mobile-is-row > .child.mobile-is-2:only-child {
+  .container.mobile-is-row > .child.big-screen-is-2:only-child {
     width: calc(2 / 12 * 100%);
     height: 100%;
     flex: none;
   }
-  .container.mobile-is-row > .child.mobile-is-3:only-child {
+  .container.mobile-is-row > .child.big-screen-is-3:only-child {
     width: calc(3 / 12 * 100%);
     height: 100%;
     flex: none;
   }
-  .container.mobile-is-row > .child.mobile-is-4:only-child {
+  .container.mobile-is-row > .child.big-screen-is-4:only-child {
     width: calc(4 / 12 * 100%);
     height: 100%;
     flex: none;
   }
-  .container.mobile-is-row > .child.mobile-is-5:only-child {
+  .container.mobile-is-row > .child.big-screen-is-5:only-child {
     width: calc(5 / 12 * 100%);
     height: 100%;
     flex: none;
   }
-  .container.mobile-is-row > .child.mobile-is-6:only-child {
+  .container.mobile-is-row > .child.big-screen-is-6:only-child {
     width: calc(6 / 12 * 100%);
     height: 100%;
     flex: none;
   }
-  .container.mobile-is-row > .child.mobile-is-7:only-child {
+  .container.mobile-is-row > .child.big-screen-is-7:only-child {
     width: calc(7 / 12 * 100%);
     height: 100%;
     flex: none;
   }
-  .container.mobile-is-row > .child.mobile-is-8:only-child {
+  .container.mobile-is-row > .child.big-screen-is-8:only-child {
     width: calc(8 / 12 * 100%);
     height: 100%;
     flex: none;
   }
-  .container.mobile-is-row > .child.mobile-is-9:only-child {
+  .container.mobile-is-row > .child.big-screen-is-9:only-child {
     width: calc(9 / 12 * 100%);
     height: 100%;
     flex: none;
   }
-  .container.mobile-is-row > .child.mobile-is-10:only-child {
+  .container.mobile-is-row > .child.big-screen-is-10:only-child {
     width: calc(10 / 12 * 100%);
     height: 100%;
     flex: none;
   }
-  .container.mobile-is-row > .child.mobile-is-11:only-child {
+  .container.mobile-is-row > .child.big-screen-is-11:only-child {
     width: calc(11 / 12 * 100%);
     height: 100%;
     flex: none;
   }
-  .container.mobile-is-row > .child.mobile-is-12:only-child {
+  .container.mobile-is-row > .child.big-screen-is-12:only-child {
     width: calc(12 / 12 * 100%);
     height: 100%;
     flex: none;
   }
-  .container.mobile-is-row > .child.mobile-is-full {
+  .container.mobile-is-row > .child.big-screen-is-full {
     height: 100%;
   }
+}
+
+@media (min-width: 0) {
   .container.mobile-is-row.mobile-child-right {
     justify-content: flex-end;
   }
@@ -840,195 +852,207 @@ html {
   .container.mobile-is-column > .child.mobile-is-full {
     width: 100%;
   }
-  .container.mobile-is-column > .child.mobile-is-1:only-child {
+}
+
+@media (min-width: 0) and (min-width: 600px) {
+  .container.mobile-is-column > .child.tablet-is-1:only-child {
     width: 100%;
     height: calc(1 / 12 * 100%);
     flex: none;
   }
-  .container.mobile-is-column > .child.mobile-is-2:only-child {
+  .container.mobile-is-column > .child.tablet-is-2:only-child {
     width: 100%;
     height: calc(2 / 12 * 100%);
     flex: none;
   }
-  .container.mobile-is-column > .child.mobile-is-3:only-child {
+  .container.mobile-is-column > .child.tablet-is-3:only-child {
     width: 100%;
     height: calc(3 / 12 * 100%);
     flex: none;
   }
-  .container.mobile-is-column > .child.mobile-is-4:only-child {
+  .container.mobile-is-column > .child.tablet-is-4:only-child {
     width: 100%;
     height: calc(4 / 12 * 100%);
     flex: none;
   }
-  .container.mobile-is-column > .child.mobile-is-5:only-child {
+  .container.mobile-is-column > .child.tablet-is-5:only-child {
     width: 100%;
     height: calc(5 / 12 * 100%);
     flex: none;
   }
-  .container.mobile-is-column > .child.mobile-is-6:only-child {
+  .container.mobile-is-column > .child.tablet-is-6:only-child {
     width: 100%;
     height: calc(6 / 12 * 100%);
     flex: none;
   }
-  .container.mobile-is-column > .child.mobile-is-7:only-child {
+  .container.mobile-is-column > .child.tablet-is-7:only-child {
     width: 100%;
     height: calc(7 / 12 * 100%);
     flex: none;
   }
-  .container.mobile-is-column > .child.mobile-is-8:only-child {
+  .container.mobile-is-column > .child.tablet-is-8:only-child {
     width: 100%;
     height: calc(8 / 12 * 100%);
     flex: none;
   }
-  .container.mobile-is-column > .child.mobile-is-9:only-child {
+  .container.mobile-is-column > .child.tablet-is-9:only-child {
     width: 100%;
     height: calc(9 / 12 * 100%);
     flex: none;
   }
-  .container.mobile-is-column > .child.mobile-is-10:only-child {
+  .container.mobile-is-column > .child.tablet-is-10:only-child {
     width: 100%;
     height: calc(10 / 12 * 100%);
     flex: none;
   }
-  .container.mobile-is-column > .child.mobile-is-11:only-child {
+  .container.mobile-is-column > .child.tablet-is-11:only-child {
     width: 100%;
     height: calc(11 / 12 * 100%);
     flex: none;
   }
-  .container.mobile-is-column > .child.mobile-is-12:only-child {
+  .container.mobile-is-column > .child.tablet-is-12:only-child {
     width: 100%;
     height: calc(12 / 12 * 100%);
     flex: none;
   }
-  .container.mobile-is-column > .child.mobile-is-full {
+  .container.mobile-is-column > .child.tablet-is-full {
     width: 100%;
   }
-  .container.mobile-is-column > .child.mobile-is-1:only-child {
+}
+
+@media (min-width: 0) and (min-width: 1200px) {
+  .container.mobile-is-column > .child.desktop-is-1:only-child {
     width: 100%;
     height: calc(1 / 12 * 100%);
     flex: none;
   }
-  .container.mobile-is-column > .child.mobile-is-2:only-child {
+  .container.mobile-is-column > .child.desktop-is-2:only-child {
     width: 100%;
     height: calc(2 / 12 * 100%);
     flex: none;
   }
-  .container.mobile-is-column > .child.mobile-is-3:only-child {
+  .container.mobile-is-column > .child.desktop-is-3:only-child {
     width: 100%;
     height: calc(3 / 12 * 100%);
     flex: none;
   }
-  .container.mobile-is-column > .child.mobile-is-4:only-child {
+  .container.mobile-is-column > .child.desktop-is-4:only-child {
     width: 100%;
     height: calc(4 / 12 * 100%);
     flex: none;
   }
-  .container.mobile-is-column > .child.mobile-is-5:only-child {
+  .container.mobile-is-column > .child.desktop-is-5:only-child {
     width: 100%;
     height: calc(5 / 12 * 100%);
     flex: none;
   }
-  .container.mobile-is-column > .child.mobile-is-6:only-child {
+  .container.mobile-is-column > .child.desktop-is-6:only-child {
     width: 100%;
     height: calc(6 / 12 * 100%);
     flex: none;
   }
-  .container.mobile-is-column > .child.mobile-is-7:only-child {
+  .container.mobile-is-column > .child.desktop-is-7:only-child {
     width: 100%;
     height: calc(7 / 12 * 100%);
     flex: none;
   }
-  .container.mobile-is-column > .child.mobile-is-8:only-child {
+  .container.mobile-is-column > .child.desktop-is-8:only-child {
     width: 100%;
     height: calc(8 / 12 * 100%);
     flex: none;
   }
-  .container.mobile-is-column > .child.mobile-is-9:only-child {
+  .container.mobile-is-column > .child.desktop-is-9:only-child {
     width: 100%;
     height: calc(9 / 12 * 100%);
     flex: none;
   }
-  .container.mobile-is-column > .child.mobile-is-10:only-child {
+  .container.mobile-is-column > .child.desktop-is-10:only-child {
     width: 100%;
     height: calc(10 / 12 * 100%);
     flex: none;
   }
-  .container.mobile-is-column > .child.mobile-is-11:only-child {
+  .container.mobile-is-column > .child.desktop-is-11:only-child {
     width: 100%;
     height: calc(11 / 12 * 100%);
     flex: none;
   }
-  .container.mobile-is-column > .child.mobile-is-12:only-child {
+  .container.mobile-is-column > .child.desktop-is-12:only-child {
     width: 100%;
     height: calc(12 / 12 * 100%);
     flex: none;
   }
-  .container.mobile-is-column > .child.mobile-is-full {
+  .container.mobile-is-column > .child.desktop-is-full {
     width: 100%;
   }
-  .container.mobile-is-column > .child.mobile-is-1:only-child {
+}
+
+@media (min-width: 0) and (min-width: 1800px) {
+  .container.mobile-is-column > .child.big-screen-is-1:only-child {
     width: 100%;
     height: calc(1 / 12 * 100%);
     flex: none;
   }
-  .container.mobile-is-column > .child.mobile-is-2:only-child {
+  .container.mobile-is-column > .child.big-screen-is-2:only-child {
     width: 100%;
     height: calc(2 / 12 * 100%);
     flex: none;
   }
-  .container.mobile-is-column > .child.mobile-is-3:only-child {
+  .container.mobile-is-column > .child.big-screen-is-3:only-child {
     width: 100%;
     height: calc(3 / 12 * 100%);
     flex: none;
   }
-  .container.mobile-is-column > .child.mobile-is-4:only-child {
+  .container.mobile-is-column > .child.big-screen-is-4:only-child {
     width: 100%;
     height: calc(4 / 12 * 100%);
     flex: none;
   }
-  .container.mobile-is-column > .child.mobile-is-5:only-child {
+  .container.mobile-is-column > .child.big-screen-is-5:only-child {
     width: 100%;
     height: calc(5 / 12 * 100%);
     flex: none;
   }
-  .container.mobile-is-column > .child.mobile-is-6:only-child {
+  .container.mobile-is-column > .child.big-screen-is-6:only-child {
     width: 100%;
     height: calc(6 / 12 * 100%);
     flex: none;
   }
-  .container.mobile-is-column > .child.mobile-is-7:only-child {
+  .container.mobile-is-column > .child.big-screen-is-7:only-child {
     width: 100%;
     height: calc(7 / 12 * 100%);
     flex: none;
   }
-  .container.mobile-is-column > .child.mobile-is-8:only-child {
+  .container.mobile-is-column > .child.big-screen-is-8:only-child {
     width: 100%;
     height: calc(8 / 12 * 100%);
     flex: none;
   }
-  .container.mobile-is-column > .child.mobile-is-9:only-child {
+  .container.mobile-is-column > .child.big-screen-is-9:only-child {
     width: 100%;
     height: calc(9 / 12 * 100%);
     flex: none;
   }
-  .container.mobile-is-column > .child.mobile-is-10:only-child {
+  .container.mobile-is-column > .child.big-screen-is-10:only-child {
     width: 100%;
     height: calc(10 / 12 * 100%);
     flex: none;
   }
-  .container.mobile-is-column > .child.mobile-is-11:only-child {
+  .container.mobile-is-column > .child.big-screen-is-11:only-child {
     width: 100%;
     height: calc(11 / 12 * 100%);
     flex: none;
   }
-  .container.mobile-is-column > .child.mobile-is-12:only-child {
+  .container.mobile-is-column > .child.big-screen-is-12:only-child {
     width: 100%;
     height: calc(12 / 12 * 100%);
     flex: none;
   }
-  .container.mobile-is-column > .child.mobile-is-full {
+  .container.mobile-is-column > .child.big-screen-is-full {
     width: 100%;
   }
+}
+
+@media (min-width: 0) {
   .container.mobile-is-column.mobile-child-bottom {
     align-items: flex-end;
   }
@@ -1078,6 +1102,75 @@ html {
   .container.tablet-is-row {
     flex-direction: row;
   }
+}
+
+@media (min-width: 600px) and (min-width: 0) {
+  .container.tablet-is-row > .child.mobile-is-1:only-child {
+    width: calc(1 / 12 * 100%);
+    height: 100%;
+    flex: none;
+  }
+  .container.tablet-is-row > .child.mobile-is-2:only-child {
+    width: calc(2 / 12 * 100%);
+    height: 100%;
+    flex: none;
+  }
+  .container.tablet-is-row > .child.mobile-is-3:only-child {
+    width: calc(3 / 12 * 100%);
+    height: 100%;
+    flex: none;
+  }
+  .container.tablet-is-row > .child.mobile-is-4:only-child {
+    width: calc(4 / 12 * 100%);
+    height: 100%;
+    flex: none;
+  }
+  .container.tablet-is-row > .child.mobile-is-5:only-child {
+    width: calc(5 / 12 * 100%);
+    height: 100%;
+    flex: none;
+  }
+  .container.tablet-is-row > .child.mobile-is-6:only-child {
+    width: calc(6 / 12 * 100%);
+    height: 100%;
+    flex: none;
+  }
+  .container.tablet-is-row > .child.mobile-is-7:only-child {
+    width: calc(7 / 12 * 100%);
+    height: 100%;
+    flex: none;
+  }
+  .container.tablet-is-row > .child.mobile-is-8:only-child {
+    width: calc(8 / 12 * 100%);
+    height: 100%;
+    flex: none;
+  }
+  .container.tablet-is-row > .child.mobile-is-9:only-child {
+    width: calc(9 / 12 * 100%);
+    height: 100%;
+    flex: none;
+  }
+  .container.tablet-is-row > .child.mobile-is-10:only-child {
+    width: calc(10 / 12 * 100%);
+    height: 100%;
+    flex: none;
+  }
+  .container.tablet-is-row > .child.mobile-is-11:only-child {
+    width: calc(11 / 12 * 100%);
+    height: 100%;
+    flex: none;
+  }
+  .container.tablet-is-row > .child.mobile-is-12:only-child {
+    width: calc(12 / 12 * 100%);
+    height: 100%;
+    flex: none;
+  }
+  .container.tablet-is-row > .child.mobile-is-full {
+    height: 100%;
+  }
+}
+
+@media (min-width: 600px) {
   .container.tablet-is-row > .child.tablet-is-1:only-child {
     width: calc(1 / 12 * 100%);
     height: 100%;
@@ -1141,195 +1234,141 @@ html {
   .container.tablet-is-row > .child.tablet-is-full {
     height: 100%;
   }
-  .container.tablet-is-row > .child.tablet-is-1:only-child {
+}
+
+@media (min-width: 600px) and (min-width: 1200px) {
+  .container.tablet-is-row > .child.desktop-is-1:only-child {
     width: calc(1 / 12 * 100%);
     height: 100%;
     flex: none;
   }
-  .container.tablet-is-row > .child.tablet-is-2:only-child {
+  .container.tablet-is-row > .child.desktop-is-2:only-child {
     width: calc(2 / 12 * 100%);
     height: 100%;
     flex: none;
   }
-  .container.tablet-is-row > .child.tablet-is-3:only-child {
+  .container.tablet-is-row > .child.desktop-is-3:only-child {
     width: calc(3 / 12 * 100%);
     height: 100%;
     flex: none;
   }
-  .container.tablet-is-row > .child.tablet-is-4:only-child {
+  .container.tablet-is-row > .child.desktop-is-4:only-child {
     width: calc(4 / 12 * 100%);
     height: 100%;
     flex: none;
   }
-  .container.tablet-is-row > .child.tablet-is-5:only-child {
+  .container.tablet-is-row > .child.desktop-is-5:only-child {
     width: calc(5 / 12 * 100%);
     height: 100%;
     flex: none;
   }
-  .container.tablet-is-row > .child.tablet-is-6:only-child {
+  .container.tablet-is-row > .child.desktop-is-6:only-child {
     width: calc(6 / 12 * 100%);
     height: 100%;
     flex: none;
   }
-  .container.tablet-is-row > .child.tablet-is-7:only-child {
+  .container.tablet-is-row > .child.desktop-is-7:only-child {
     width: calc(7 / 12 * 100%);
     height: 100%;
     flex: none;
   }
-  .container.tablet-is-row > .child.tablet-is-8:only-child {
+  .container.tablet-is-row > .child.desktop-is-8:only-child {
     width: calc(8 / 12 * 100%);
     height: 100%;
     flex: none;
   }
-  .container.tablet-is-row > .child.tablet-is-9:only-child {
+  .container.tablet-is-row > .child.desktop-is-9:only-child {
     width: calc(9 / 12 * 100%);
     height: 100%;
     flex: none;
   }
-  .container.tablet-is-row > .child.tablet-is-10:only-child {
+  .container.tablet-is-row > .child.desktop-is-10:only-child {
     width: calc(10 / 12 * 100%);
     height: 100%;
     flex: none;
   }
-  .container.tablet-is-row > .child.tablet-is-11:only-child {
+  .container.tablet-is-row > .child.desktop-is-11:only-child {
     width: calc(11 / 12 * 100%);
     height: 100%;
     flex: none;
   }
-  .container.tablet-is-row > .child.tablet-is-12:only-child {
+  .container.tablet-is-row > .child.desktop-is-12:only-child {
     width: calc(12 / 12 * 100%);
     height: 100%;
     flex: none;
   }
-  .container.tablet-is-row > .child.tablet-is-full {
+  .container.tablet-is-row > .child.desktop-is-full {
     height: 100%;
   }
-  .container.tablet-is-row > .child.tablet-is-1:only-child {
+}
+
+@media (min-width: 600px) and (min-width: 1800px) {
+  .container.tablet-is-row > .child.big-screen-is-1:only-child {
     width: calc(1 / 12 * 100%);
     height: 100%;
     flex: none;
   }
-  .container.tablet-is-row > .child.tablet-is-2:only-child {
+  .container.tablet-is-row > .child.big-screen-is-2:only-child {
     width: calc(2 / 12 * 100%);
     height: 100%;
     flex: none;
   }
-  .container.tablet-is-row > .child.tablet-is-3:only-child {
+  .container.tablet-is-row > .child.big-screen-is-3:only-child {
     width: calc(3 / 12 * 100%);
     height: 100%;
     flex: none;
   }
-  .container.tablet-is-row > .child.tablet-is-4:only-child {
+  .container.tablet-is-row > .child.big-screen-is-4:only-child {
     width: calc(4 / 12 * 100%);
     height: 100%;
     flex: none;
   }
-  .container.tablet-is-row > .child.tablet-is-5:only-child {
+  .container.tablet-is-row > .child.big-screen-is-5:only-child {
     width: calc(5 / 12 * 100%);
     height: 100%;
     flex: none;
   }
-  .container.tablet-is-row > .child.tablet-is-6:only-child {
+  .container.tablet-is-row > .child.big-screen-is-6:only-child {
     width: calc(6 / 12 * 100%);
     height: 100%;
     flex: none;
   }
-  .container.tablet-is-row > .child.tablet-is-7:only-child {
+  .container.tablet-is-row > .child.big-screen-is-7:only-child {
     width: calc(7 / 12 * 100%);
     height: 100%;
     flex: none;
   }
-  .container.tablet-is-row > .child.tablet-is-8:only-child {
+  .container.tablet-is-row > .child.big-screen-is-8:only-child {
     width: calc(8 / 12 * 100%);
     height: 100%;
     flex: none;
   }
-  .container.tablet-is-row > .child.tablet-is-9:only-child {
+  .container.tablet-is-row > .child.big-screen-is-9:only-child {
     width: calc(9 / 12 * 100%);
     height: 100%;
     flex: none;
   }
-  .container.tablet-is-row > .child.tablet-is-10:only-child {
+  .container.tablet-is-row > .child.big-screen-is-10:only-child {
     width: calc(10 / 12 * 100%);
     height: 100%;
     flex: none;
   }
-  .container.tablet-is-row > .child.tablet-is-11:only-child {
+  .container.tablet-is-row > .child.big-screen-is-11:only-child {
     width: calc(11 / 12 * 100%);
     height: 100%;
     flex: none;
   }
-  .container.tablet-is-row > .child.tablet-is-12:only-child {
+  .container.tablet-is-row > .child.big-screen-is-12:only-child {
     width: calc(12 / 12 * 100%);
     height: 100%;
     flex: none;
   }
-  .container.tablet-is-row > .child.tablet-is-full {
+  .container.tablet-is-row > .child.big-screen-is-full {
     height: 100%;
   }
-  .container.tablet-is-row > .child.tablet-is-1:only-child {
-    width: calc(1 / 12 * 100%);
-    height: 100%;
-    flex: none;
-  }
-  .container.tablet-is-row > .child.tablet-is-2:only-child {
-    width: calc(2 / 12 * 100%);
-    height: 100%;
-    flex: none;
-  }
-  .container.tablet-is-row > .child.tablet-is-3:only-child {
-    width: calc(3 / 12 * 100%);
-    height: 100%;
-    flex: none;
-  }
-  .container.tablet-is-row > .child.tablet-is-4:only-child {
-    width: calc(4 / 12 * 100%);
-    height: 100%;
-    flex: none;
-  }
-  .container.tablet-is-row > .child.tablet-is-5:only-child {
-    width: calc(5 / 12 * 100%);
-    height: 100%;
-    flex: none;
-  }
-  .container.tablet-is-row > .child.tablet-is-6:only-child {
-    width: calc(6 / 12 * 100%);
-    height: 100%;
-    flex: none;
-  }
-  .container.tablet-is-row > .child.tablet-is-7:only-child {
-    width: calc(7 / 12 * 100%);
-    height: 100%;
-    flex: none;
-  }
-  .container.tablet-is-row > .child.tablet-is-8:only-child {
-    width: calc(8 / 12 * 100%);
-    height: 100%;
-    flex: none;
-  }
-  .container.tablet-is-row > .child.tablet-is-9:only-child {
-    width: calc(9 / 12 * 100%);
-    height: 100%;
-    flex: none;
-  }
-  .container.tablet-is-row > .child.tablet-is-10:only-child {
-    width: calc(10 / 12 * 100%);
-    height: 100%;
-    flex: none;
-  }
-  .container.tablet-is-row > .child.tablet-is-11:only-child {
-    width: calc(11 / 12 * 100%);
-    height: 100%;
-    flex: none;
-  }
-  .container.tablet-is-row > .child.tablet-is-12:only-child {
-    width: calc(12 / 12 * 100%);
-    height: 100%;
-    flex: none;
-  }
-  .container.tablet-is-row > .child.tablet-is-full {
-    height: 100%;
-  }
+}
+
+@media (min-width: 600px) {
   .container.tablet-is-row.mobile-child-right {
     justify-content: flex-end;
   }
@@ -1357,6 +1396,75 @@ html {
   .container.tablet-is-column {
     flex-direction: column;
   }
+}
+
+@media (min-width: 600px) and (min-width: 0) {
+  .container.tablet-is-column > .child.mobile-is-1:only-child {
+    width: 100%;
+    height: calc(1 / 12 * 100%);
+    flex: none;
+  }
+  .container.tablet-is-column > .child.mobile-is-2:only-child {
+    width: 100%;
+    height: calc(2 / 12 * 100%);
+    flex: none;
+  }
+  .container.tablet-is-column > .child.mobile-is-3:only-child {
+    width: 100%;
+    height: calc(3 / 12 * 100%);
+    flex: none;
+  }
+  .container.tablet-is-column > .child.mobile-is-4:only-child {
+    width: 100%;
+    height: calc(4 / 12 * 100%);
+    flex: none;
+  }
+  .container.tablet-is-column > .child.mobile-is-5:only-child {
+    width: 100%;
+    height: calc(5 / 12 * 100%);
+    flex: none;
+  }
+  .container.tablet-is-column > .child.mobile-is-6:only-child {
+    width: 100%;
+    height: calc(6 / 12 * 100%);
+    flex: none;
+  }
+  .container.tablet-is-column > .child.mobile-is-7:only-child {
+    width: 100%;
+    height: calc(7 / 12 * 100%);
+    flex: none;
+  }
+  .container.tablet-is-column > .child.mobile-is-8:only-child {
+    width: 100%;
+    height: calc(8 / 12 * 100%);
+    flex: none;
+  }
+  .container.tablet-is-column > .child.mobile-is-9:only-child {
+    width: 100%;
+    height: calc(9 / 12 * 100%);
+    flex: none;
+  }
+  .container.tablet-is-column > .child.mobile-is-10:only-child {
+    width: 100%;
+    height: calc(10 / 12 * 100%);
+    flex: none;
+  }
+  .container.tablet-is-column > .child.mobile-is-11:only-child {
+    width: 100%;
+    height: calc(11 / 12 * 100%);
+    flex: none;
+  }
+  .container.tablet-is-column > .child.mobile-is-12:only-child {
+    width: 100%;
+    height: calc(12 / 12 * 100%);
+    flex: none;
+  }
+  .container.tablet-is-column > .child.mobile-is-full {
+    width: 100%;
+  }
+}
+
+@media (min-width: 600px) {
   .container.tablet-is-column > .child.tablet-is-1:only-child {
     width: 100%;
     height: calc(1 / 12 * 100%);
@@ -1420,195 +1528,141 @@ html {
   .container.tablet-is-column > .child.tablet-is-full {
     width: 100%;
   }
-  .container.tablet-is-column > .child.tablet-is-1:only-child {
+}
+
+@media (min-width: 600px) and (min-width: 1200px) {
+  .container.tablet-is-column > .child.desktop-is-1:only-child {
     width: 100%;
     height: calc(1 / 12 * 100%);
     flex: none;
   }
-  .container.tablet-is-column > .child.tablet-is-2:only-child {
+  .container.tablet-is-column > .child.desktop-is-2:only-child {
     width: 100%;
     height: calc(2 / 12 * 100%);
     flex: none;
   }
-  .container.tablet-is-column > .child.tablet-is-3:only-child {
+  .container.tablet-is-column > .child.desktop-is-3:only-child {
     width: 100%;
     height: calc(3 / 12 * 100%);
     flex: none;
   }
-  .container.tablet-is-column > .child.tablet-is-4:only-child {
+  .container.tablet-is-column > .child.desktop-is-4:only-child {
     width: 100%;
     height: calc(4 / 12 * 100%);
     flex: none;
   }
-  .container.tablet-is-column > .child.tablet-is-5:only-child {
+  .container.tablet-is-column > .child.desktop-is-5:only-child {
     width: 100%;
     height: calc(5 / 12 * 100%);
     flex: none;
   }
-  .container.tablet-is-column > .child.tablet-is-6:only-child {
+  .container.tablet-is-column > .child.desktop-is-6:only-child {
     width: 100%;
     height: calc(6 / 12 * 100%);
     flex: none;
   }
-  .container.tablet-is-column > .child.tablet-is-7:only-child {
+  .container.tablet-is-column > .child.desktop-is-7:only-child {
     width: 100%;
     height: calc(7 / 12 * 100%);
     flex: none;
   }
-  .container.tablet-is-column > .child.tablet-is-8:only-child {
+  .container.tablet-is-column > .child.desktop-is-8:only-child {
     width: 100%;
     height: calc(8 / 12 * 100%);
     flex: none;
   }
-  .container.tablet-is-column > .child.tablet-is-9:only-child {
+  .container.tablet-is-column > .child.desktop-is-9:only-child {
     width: 100%;
     height: calc(9 / 12 * 100%);
     flex: none;
   }
-  .container.tablet-is-column > .child.tablet-is-10:only-child {
+  .container.tablet-is-column > .child.desktop-is-10:only-child {
     width: 100%;
     height: calc(10 / 12 * 100%);
     flex: none;
   }
-  .container.tablet-is-column > .child.tablet-is-11:only-child {
+  .container.tablet-is-column > .child.desktop-is-11:only-child {
     width: 100%;
     height: calc(11 / 12 * 100%);
     flex: none;
   }
-  .container.tablet-is-column > .child.tablet-is-12:only-child {
+  .container.tablet-is-column > .child.desktop-is-12:only-child {
     width: 100%;
     height: calc(12 / 12 * 100%);
     flex: none;
   }
-  .container.tablet-is-column > .child.tablet-is-full {
+  .container.tablet-is-column > .child.desktop-is-full {
     width: 100%;
   }
-  .container.tablet-is-column > .child.tablet-is-1:only-child {
+}
+
+@media (min-width: 600px) and (min-width: 1800px) {
+  .container.tablet-is-column > .child.big-screen-is-1:only-child {
     width: 100%;
     height: calc(1 / 12 * 100%);
     flex: none;
   }
-  .container.tablet-is-column > .child.tablet-is-2:only-child {
+  .container.tablet-is-column > .child.big-screen-is-2:only-child {
     width: 100%;
     height: calc(2 / 12 * 100%);
     flex: none;
   }
-  .container.tablet-is-column > .child.tablet-is-3:only-child {
+  .container.tablet-is-column > .child.big-screen-is-3:only-child {
     width: 100%;
     height: calc(3 / 12 * 100%);
     flex: none;
   }
-  .container.tablet-is-column > .child.tablet-is-4:only-child {
+  .container.tablet-is-column > .child.big-screen-is-4:only-child {
     width: 100%;
     height: calc(4 / 12 * 100%);
     flex: none;
   }
-  .container.tablet-is-column > .child.tablet-is-5:only-child {
+  .container.tablet-is-column > .child.big-screen-is-5:only-child {
     width: 100%;
     height: calc(5 / 12 * 100%);
     flex: none;
   }
-  .container.tablet-is-column > .child.tablet-is-6:only-child {
+  .container.tablet-is-column > .child.big-screen-is-6:only-child {
     width: 100%;
     height: calc(6 / 12 * 100%);
     flex: none;
   }
-  .container.tablet-is-column > .child.tablet-is-7:only-child {
+  .container.tablet-is-column > .child.big-screen-is-7:only-child {
     width: 100%;
     height: calc(7 / 12 * 100%);
     flex: none;
   }
-  .container.tablet-is-column > .child.tablet-is-8:only-child {
+  .container.tablet-is-column > .child.big-screen-is-8:only-child {
     width: 100%;
     height: calc(8 / 12 * 100%);
     flex: none;
   }
-  .container.tablet-is-column > .child.tablet-is-9:only-child {
+  .container.tablet-is-column > .child.big-screen-is-9:only-child {
     width: 100%;
     height: calc(9 / 12 * 100%);
     flex: none;
   }
-  .container.tablet-is-column > .child.tablet-is-10:only-child {
+  .container.tablet-is-column > .child.big-screen-is-10:only-child {
     width: 100%;
     height: calc(10 / 12 * 100%);
     flex: none;
   }
-  .container.tablet-is-column > .child.tablet-is-11:only-child {
+  .container.tablet-is-column > .child.big-screen-is-11:only-child {
     width: 100%;
     height: calc(11 / 12 * 100%);
     flex: none;
   }
-  .container.tablet-is-column > .child.tablet-is-12:only-child {
+  .container.tablet-is-column > .child.big-screen-is-12:only-child {
     width: 100%;
     height: calc(12 / 12 * 100%);
     flex: none;
   }
-  .container.tablet-is-column > .child.tablet-is-full {
+  .container.tablet-is-column > .child.big-screen-is-full {
     width: 100%;
   }
-  .container.tablet-is-column > .child.tablet-is-1:only-child {
-    width: 100%;
-    height: calc(1 / 12 * 100%);
-    flex: none;
-  }
-  .container.tablet-is-column > .child.tablet-is-2:only-child {
-    width: 100%;
-    height: calc(2 / 12 * 100%);
-    flex: none;
-  }
-  .container.tablet-is-column > .child.tablet-is-3:only-child {
-    width: 100%;
-    height: calc(3 / 12 * 100%);
-    flex: none;
-  }
-  .container.tablet-is-column > .child.tablet-is-4:only-child {
-    width: 100%;
-    height: calc(4 / 12 * 100%);
-    flex: none;
-  }
-  .container.tablet-is-column > .child.tablet-is-5:only-child {
-    width: 100%;
-    height: calc(5 / 12 * 100%);
-    flex: none;
-  }
-  .container.tablet-is-column > .child.tablet-is-6:only-child {
-    width: 100%;
-    height: calc(6 / 12 * 100%);
-    flex: none;
-  }
-  .container.tablet-is-column > .child.tablet-is-7:only-child {
-    width: 100%;
-    height: calc(7 / 12 * 100%);
-    flex: none;
-  }
-  .container.tablet-is-column > .child.tablet-is-8:only-child {
-    width: 100%;
-    height: calc(8 / 12 * 100%);
-    flex: none;
-  }
-  .container.tablet-is-column > .child.tablet-is-9:only-child {
-    width: 100%;
-    height: calc(9 / 12 * 100%);
-    flex: none;
-  }
-  .container.tablet-is-column > .child.tablet-is-10:only-child {
-    width: 100%;
-    height: calc(10 / 12 * 100%);
-    flex: none;
-  }
-  .container.tablet-is-column > .child.tablet-is-11:only-child {
-    width: 100%;
-    height: calc(11 / 12 * 100%);
-    flex: none;
-  }
-  .container.tablet-is-column > .child.tablet-is-12:only-child {
-    width: 100%;
-    height: calc(12 / 12 * 100%);
-    flex: none;
-  }
-  .container.tablet-is-column > .child.tablet-is-full {
-    width: 100%;
-  }
+}
+
+@media (min-width: 600px) {
   .container.tablet-is-column.mobile-child-bottom {
     align-items: flex-end;
   }
@@ -1658,6 +1712,141 @@ html {
   .container.desktop-is-row {
     flex-direction: row;
   }
+}
+
+@media (min-width: 1200px) and (min-width: 0) {
+  .container.desktop-is-row > .child.mobile-is-1:only-child {
+    width: calc(1 / 12 * 100%);
+    height: 100%;
+    flex: none;
+  }
+  .container.desktop-is-row > .child.mobile-is-2:only-child {
+    width: calc(2 / 12 * 100%);
+    height: 100%;
+    flex: none;
+  }
+  .container.desktop-is-row > .child.mobile-is-3:only-child {
+    width: calc(3 / 12 * 100%);
+    height: 100%;
+    flex: none;
+  }
+  .container.desktop-is-row > .child.mobile-is-4:only-child {
+    width: calc(4 / 12 * 100%);
+    height: 100%;
+    flex: none;
+  }
+  .container.desktop-is-row > .child.mobile-is-5:only-child {
+    width: calc(5 / 12 * 100%);
+    height: 100%;
+    flex: none;
+  }
+  .container.desktop-is-row > .child.mobile-is-6:only-child {
+    width: calc(6 / 12 * 100%);
+    height: 100%;
+    flex: none;
+  }
+  .container.desktop-is-row > .child.mobile-is-7:only-child {
+    width: calc(7 / 12 * 100%);
+    height: 100%;
+    flex: none;
+  }
+  .container.desktop-is-row > .child.mobile-is-8:only-child {
+    width: calc(8 / 12 * 100%);
+    height: 100%;
+    flex: none;
+  }
+  .container.desktop-is-row > .child.mobile-is-9:only-child {
+    width: calc(9 / 12 * 100%);
+    height: 100%;
+    flex: none;
+  }
+  .container.desktop-is-row > .child.mobile-is-10:only-child {
+    width: calc(10 / 12 * 100%);
+    height: 100%;
+    flex: none;
+  }
+  .container.desktop-is-row > .child.mobile-is-11:only-child {
+    width: calc(11 / 12 * 100%);
+    height: 100%;
+    flex: none;
+  }
+  .container.desktop-is-row > .child.mobile-is-12:only-child {
+    width: calc(12 / 12 * 100%);
+    height: 100%;
+    flex: none;
+  }
+  .container.desktop-is-row > .child.mobile-is-full {
+    height: 100%;
+  }
+}
+
+@media (min-width: 1200px) and (min-width: 600px) {
+  .container.desktop-is-row > .child.tablet-is-1:only-child {
+    width: calc(1 / 12 * 100%);
+    height: 100%;
+    flex: none;
+  }
+  .container.desktop-is-row > .child.tablet-is-2:only-child {
+    width: calc(2 / 12 * 100%);
+    height: 100%;
+    flex: none;
+  }
+  .container.desktop-is-row > .child.tablet-is-3:only-child {
+    width: calc(3 / 12 * 100%);
+    height: 100%;
+    flex: none;
+  }
+  .container.desktop-is-row > .child.tablet-is-4:only-child {
+    width: calc(4 / 12 * 100%);
+    height: 100%;
+    flex: none;
+  }
+  .container.desktop-is-row > .child.tablet-is-5:only-child {
+    width: calc(5 / 12 * 100%);
+    height: 100%;
+    flex: none;
+  }
+  .container.desktop-is-row > .child.tablet-is-6:only-child {
+    width: calc(6 / 12 * 100%);
+    height: 100%;
+    flex: none;
+  }
+  .container.desktop-is-row > .child.tablet-is-7:only-child {
+    width: calc(7 / 12 * 100%);
+    height: 100%;
+    flex: none;
+  }
+  .container.desktop-is-row > .child.tablet-is-8:only-child {
+    width: calc(8 / 12 * 100%);
+    height: 100%;
+    flex: none;
+  }
+  .container.desktop-is-row > .child.tablet-is-9:only-child {
+    width: calc(9 / 12 * 100%);
+    height: 100%;
+    flex: none;
+  }
+  .container.desktop-is-row > .child.tablet-is-10:only-child {
+    width: calc(10 / 12 * 100%);
+    height: 100%;
+    flex: none;
+  }
+  .container.desktop-is-row > .child.tablet-is-11:only-child {
+    width: calc(11 / 12 * 100%);
+    height: 100%;
+    flex: none;
+  }
+  .container.desktop-is-row > .child.tablet-is-12:only-child {
+    width: calc(12 / 12 * 100%);
+    height: 100%;
+    flex: none;
+  }
+  .container.desktop-is-row > .child.tablet-is-full {
+    height: 100%;
+  }
+}
+
+@media (min-width: 1200px) {
   .container.desktop-is-row > .child.desktop-is-1:only-child {
     width: calc(1 / 12 * 100%);
     height: 100%;
@@ -1721,195 +1910,75 @@ html {
   .container.desktop-is-row > .child.desktop-is-full {
     height: 100%;
   }
-  .container.desktop-is-row > .child.desktop-is-1:only-child {
+}
+
+@media (min-width: 1200px) and (min-width: 1800px) {
+  .container.desktop-is-row > .child.big-screen-is-1:only-child {
     width: calc(1 / 12 * 100%);
     height: 100%;
     flex: none;
   }
-  .container.desktop-is-row > .child.desktop-is-2:only-child {
+  .container.desktop-is-row > .child.big-screen-is-2:only-child {
     width: calc(2 / 12 * 100%);
     height: 100%;
     flex: none;
   }
-  .container.desktop-is-row > .child.desktop-is-3:only-child {
+  .container.desktop-is-row > .child.big-screen-is-3:only-child {
     width: calc(3 / 12 * 100%);
     height: 100%;
     flex: none;
   }
-  .container.desktop-is-row > .child.desktop-is-4:only-child {
+  .container.desktop-is-row > .child.big-screen-is-4:only-child {
     width: calc(4 / 12 * 100%);
     height: 100%;
     flex: none;
   }
-  .container.desktop-is-row > .child.desktop-is-5:only-child {
+  .container.desktop-is-row > .child.big-screen-is-5:only-child {
     width: calc(5 / 12 * 100%);
     height: 100%;
     flex: none;
   }
-  .container.desktop-is-row > .child.desktop-is-6:only-child {
+  .container.desktop-is-row > .child.big-screen-is-6:only-child {
     width: calc(6 / 12 * 100%);
     height: 100%;
     flex: none;
   }
-  .container.desktop-is-row > .child.desktop-is-7:only-child {
+  .container.desktop-is-row > .child.big-screen-is-7:only-child {
     width: calc(7 / 12 * 100%);
     height: 100%;
     flex: none;
   }
-  .container.desktop-is-row > .child.desktop-is-8:only-child {
+  .container.desktop-is-row > .child.big-screen-is-8:only-child {
     width: calc(8 / 12 * 100%);
     height: 100%;
     flex: none;
   }
-  .container.desktop-is-row > .child.desktop-is-9:only-child {
+  .container.desktop-is-row > .child.big-screen-is-9:only-child {
     width: calc(9 / 12 * 100%);
     height: 100%;
     flex: none;
   }
-  .container.desktop-is-row > .child.desktop-is-10:only-child {
+  .container.desktop-is-row > .child.big-screen-is-10:only-child {
     width: calc(10 / 12 * 100%);
     height: 100%;
     flex: none;
   }
-  .container.desktop-is-row > .child.desktop-is-11:only-child {
+  .container.desktop-is-row > .child.big-screen-is-11:only-child {
     width: calc(11 / 12 * 100%);
     height: 100%;
     flex: none;
   }
-  .container.desktop-is-row > .child.desktop-is-12:only-child {
+  .container.desktop-is-row > .child.big-screen-is-12:only-child {
     width: calc(12 / 12 * 100%);
     height: 100%;
     flex: none;
   }
-  .container.desktop-is-row > .child.desktop-is-full {
+  .container.desktop-is-row > .child.big-screen-is-full {
     height: 100%;
   }
-  .container.desktop-is-row > .child.desktop-is-1:only-child {
-    width: calc(1 / 12 * 100%);
-    height: 100%;
-    flex: none;
-  }
-  .container.desktop-is-row > .child.desktop-is-2:only-child {
-    width: calc(2 / 12 * 100%);
-    height: 100%;
-    flex: none;
-  }
-  .container.desktop-is-row > .child.desktop-is-3:only-child {
-    width: calc(3 / 12 * 100%);
-    height: 100%;
-    flex: none;
-  }
-  .container.desktop-is-row > .child.desktop-is-4:only-child {
-    width: calc(4 / 12 * 100%);
-    height: 100%;
-    flex: none;
-  }
-  .container.desktop-is-row > .child.desktop-is-5:only-child {
-    width: calc(5 / 12 * 100%);
-    height: 100%;
-    flex: none;
-  }
-  .container.desktop-is-row > .child.desktop-is-6:only-child {
-    width: calc(6 / 12 * 100%);
-    height: 100%;
-    flex: none;
-  }
-  .container.desktop-is-row > .child.desktop-is-7:only-child {
-    width: calc(7 / 12 * 100%);
-    height: 100%;
-    flex: none;
-  }
-  .container.desktop-is-row > .child.desktop-is-8:only-child {
-    width: calc(8 / 12 * 100%);
-    height: 100%;
-    flex: none;
-  }
-  .container.desktop-is-row > .child.desktop-is-9:only-child {
-    width: calc(9 / 12 * 100%);
-    height: 100%;
-    flex: none;
-  }
-  .container.desktop-is-row > .child.desktop-is-10:only-child {
-    width: calc(10 / 12 * 100%);
-    height: 100%;
-    flex: none;
-  }
-  .container.desktop-is-row > .child.desktop-is-11:only-child {
-    width: calc(11 / 12 * 100%);
-    height: 100%;
-    flex: none;
-  }
-  .container.desktop-is-row > .child.desktop-is-12:only-child {
-    width: calc(12 / 12 * 100%);
-    height: 100%;
-    flex: none;
-  }
-  .container.desktop-is-row > .child.desktop-is-full {
-    height: 100%;
-  }
-  .container.desktop-is-row > .child.desktop-is-1:only-child {
-    width: calc(1 / 12 * 100%);
-    height: 100%;
-    flex: none;
-  }
-  .container.desktop-is-row > .child.desktop-is-2:only-child {
-    width: calc(2 / 12 * 100%);
-    height: 100%;
-    flex: none;
-  }
-  .container.desktop-is-row > .child.desktop-is-3:only-child {
-    width: calc(3 / 12 * 100%);
-    height: 100%;
-    flex: none;
-  }
-  .container.desktop-is-row > .child.desktop-is-4:only-child {
-    width: calc(4 / 12 * 100%);
-    height: 100%;
-    flex: none;
-  }
-  .container.desktop-is-row > .child.desktop-is-5:only-child {
-    width: calc(5 / 12 * 100%);
-    height: 100%;
-    flex: none;
-  }
-  .container.desktop-is-row > .child.desktop-is-6:only-child {
-    width: calc(6 / 12 * 100%);
-    height: 100%;
-    flex: none;
-  }
-  .container.desktop-is-row > .child.desktop-is-7:only-child {
-    width: calc(7 / 12 * 100%);
-    height: 100%;
-    flex: none;
-  }
-  .container.desktop-is-row > .child.desktop-is-8:only-child {
-    width: calc(8 / 12 * 100%);
-    height: 100%;
-    flex: none;
-  }
-  .container.desktop-is-row > .child.desktop-is-9:only-child {
-    width: calc(9 / 12 * 100%);
-    height: 100%;
-    flex: none;
-  }
-  .container.desktop-is-row > .child.desktop-is-10:only-child {
-    width: calc(10 / 12 * 100%);
-    height: 100%;
-    flex: none;
-  }
-  .container.desktop-is-row > .child.desktop-is-11:only-child {
-    width: calc(11 / 12 * 100%);
-    height: 100%;
-    flex: none;
-  }
-  .container.desktop-is-row > .child.desktop-is-12:only-child {
-    width: calc(12 / 12 * 100%);
-    height: 100%;
-    flex: none;
-  }
-  .container.desktop-is-row > .child.desktop-is-full {
-    height: 100%;
-  }
+}
+
+@media (min-width: 1200px) {
   .container.desktop-is-row.mobile-child-right {
     justify-content: flex-end;
   }
@@ -1937,6 +2006,141 @@ html {
   .container.desktop-is-column {
     flex-direction: column;
   }
+}
+
+@media (min-width: 1200px) and (min-width: 0) {
+  .container.desktop-is-column > .child.mobile-is-1:only-child {
+    width: 100%;
+    height: calc(1 / 12 * 100%);
+    flex: none;
+  }
+  .container.desktop-is-column > .child.mobile-is-2:only-child {
+    width: 100%;
+    height: calc(2 / 12 * 100%);
+    flex: none;
+  }
+  .container.desktop-is-column > .child.mobile-is-3:only-child {
+    width: 100%;
+    height: calc(3 / 12 * 100%);
+    flex: none;
+  }
+  .container.desktop-is-column > .child.mobile-is-4:only-child {
+    width: 100%;
+    height: calc(4 / 12 * 100%);
+    flex: none;
+  }
+  .container.desktop-is-column > .child.mobile-is-5:only-child {
+    width: 100%;
+    height: calc(5 / 12 * 100%);
+    flex: none;
+  }
+  .container.desktop-is-column > .child.mobile-is-6:only-child {
+    width: 100%;
+    height: calc(6 / 12 * 100%);
+    flex: none;
+  }
+  .container.desktop-is-column > .child.mobile-is-7:only-child {
+    width: 100%;
+    height: calc(7 / 12 * 100%);
+    flex: none;
+  }
+  .container.desktop-is-column > .child.mobile-is-8:only-child {
+    width: 100%;
+    height: calc(8 / 12 * 100%);
+    flex: none;
+  }
+  .container.desktop-is-column > .child.mobile-is-9:only-child {
+    width: 100%;
+    height: calc(9 / 12 * 100%);
+    flex: none;
+  }
+  .container.desktop-is-column > .child.mobile-is-10:only-child {
+    width: 100%;
+    height: calc(10 / 12 * 100%);
+    flex: none;
+  }
+  .container.desktop-is-column > .child.mobile-is-11:only-child {
+    width: 100%;
+    height: calc(11 / 12 * 100%);
+    flex: none;
+  }
+  .container.desktop-is-column > .child.mobile-is-12:only-child {
+    width: 100%;
+    height: calc(12 / 12 * 100%);
+    flex: none;
+  }
+  .container.desktop-is-column > .child.mobile-is-full {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1200px) and (min-width: 600px) {
+  .container.desktop-is-column > .child.tablet-is-1:only-child {
+    width: 100%;
+    height: calc(1 / 12 * 100%);
+    flex: none;
+  }
+  .container.desktop-is-column > .child.tablet-is-2:only-child {
+    width: 100%;
+    height: calc(2 / 12 * 100%);
+    flex: none;
+  }
+  .container.desktop-is-column > .child.tablet-is-3:only-child {
+    width: 100%;
+    height: calc(3 / 12 * 100%);
+    flex: none;
+  }
+  .container.desktop-is-column > .child.tablet-is-4:only-child {
+    width: 100%;
+    height: calc(4 / 12 * 100%);
+    flex: none;
+  }
+  .container.desktop-is-column > .child.tablet-is-5:only-child {
+    width: 100%;
+    height: calc(5 / 12 * 100%);
+    flex: none;
+  }
+  .container.desktop-is-column > .child.tablet-is-6:only-child {
+    width: 100%;
+    height: calc(6 / 12 * 100%);
+    flex: none;
+  }
+  .container.desktop-is-column > .child.tablet-is-7:only-child {
+    width: 100%;
+    height: calc(7 / 12 * 100%);
+    flex: none;
+  }
+  .container.desktop-is-column > .child.tablet-is-8:only-child {
+    width: 100%;
+    height: calc(8 / 12 * 100%);
+    flex: none;
+  }
+  .container.desktop-is-column > .child.tablet-is-9:only-child {
+    width: 100%;
+    height: calc(9 / 12 * 100%);
+    flex: none;
+  }
+  .container.desktop-is-column > .child.tablet-is-10:only-child {
+    width: 100%;
+    height: calc(10 / 12 * 100%);
+    flex: none;
+  }
+  .container.desktop-is-column > .child.tablet-is-11:only-child {
+    width: 100%;
+    height: calc(11 / 12 * 100%);
+    flex: none;
+  }
+  .container.desktop-is-column > .child.tablet-is-12:only-child {
+    width: 100%;
+    height: calc(12 / 12 * 100%);
+    flex: none;
+  }
+  .container.desktop-is-column > .child.tablet-is-full {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1200px) {
   .container.desktop-is-column > .child.desktop-is-1:only-child {
     width: 100%;
     height: calc(1 / 12 * 100%);
@@ -2000,195 +2204,75 @@ html {
   .container.desktop-is-column > .child.desktop-is-full {
     width: 100%;
   }
-  .container.desktop-is-column > .child.desktop-is-1:only-child {
+}
+
+@media (min-width: 1200px) and (min-width: 1800px) {
+  .container.desktop-is-column > .child.big-screen-is-1:only-child {
     width: 100%;
     height: calc(1 / 12 * 100%);
     flex: none;
   }
-  .container.desktop-is-column > .child.desktop-is-2:only-child {
+  .container.desktop-is-column > .child.big-screen-is-2:only-child {
     width: 100%;
     height: calc(2 / 12 * 100%);
     flex: none;
   }
-  .container.desktop-is-column > .child.desktop-is-3:only-child {
+  .container.desktop-is-column > .child.big-screen-is-3:only-child {
     width: 100%;
     height: calc(3 / 12 * 100%);
     flex: none;
   }
-  .container.desktop-is-column > .child.desktop-is-4:only-child {
+  .container.desktop-is-column > .child.big-screen-is-4:only-child {
     width: 100%;
     height: calc(4 / 12 * 100%);
     flex: none;
   }
-  .container.desktop-is-column > .child.desktop-is-5:only-child {
+  .container.desktop-is-column > .child.big-screen-is-5:only-child {
     width: 100%;
     height: calc(5 / 12 * 100%);
     flex: none;
   }
-  .container.desktop-is-column > .child.desktop-is-6:only-child {
+  .container.desktop-is-column > .child.big-screen-is-6:only-child {
     width: 100%;
     height: calc(6 / 12 * 100%);
     flex: none;
   }
-  .container.desktop-is-column > .child.desktop-is-7:only-child {
+  .container.desktop-is-column > .child.big-screen-is-7:only-child {
     width: 100%;
     height: calc(7 / 12 * 100%);
     flex: none;
   }
-  .container.desktop-is-column > .child.desktop-is-8:only-child {
+  .container.desktop-is-column > .child.big-screen-is-8:only-child {
     width: 100%;
     height: calc(8 / 12 * 100%);
     flex: none;
   }
-  .container.desktop-is-column > .child.desktop-is-9:only-child {
+  .container.desktop-is-column > .child.big-screen-is-9:only-child {
     width: 100%;
     height: calc(9 / 12 * 100%);
     flex: none;
   }
-  .container.desktop-is-column > .child.desktop-is-10:only-child {
+  .container.desktop-is-column > .child.big-screen-is-10:only-child {
     width: 100%;
     height: calc(10 / 12 * 100%);
     flex: none;
   }
-  .container.desktop-is-column > .child.desktop-is-11:only-child {
+  .container.desktop-is-column > .child.big-screen-is-11:only-child {
     width: 100%;
     height: calc(11 / 12 * 100%);
     flex: none;
   }
-  .container.desktop-is-column > .child.desktop-is-12:only-child {
+  .container.desktop-is-column > .child.big-screen-is-12:only-child {
     width: 100%;
     height: calc(12 / 12 * 100%);
     flex: none;
   }
-  .container.desktop-is-column > .child.desktop-is-full {
+  .container.desktop-is-column > .child.big-screen-is-full {
     width: 100%;
   }
-  .container.desktop-is-column > .child.desktop-is-1:only-child {
-    width: 100%;
-    height: calc(1 / 12 * 100%);
-    flex: none;
-  }
-  .container.desktop-is-column > .child.desktop-is-2:only-child {
-    width: 100%;
-    height: calc(2 / 12 * 100%);
-    flex: none;
-  }
-  .container.desktop-is-column > .child.desktop-is-3:only-child {
-    width: 100%;
-    height: calc(3 / 12 * 100%);
-    flex: none;
-  }
-  .container.desktop-is-column > .child.desktop-is-4:only-child {
-    width: 100%;
-    height: calc(4 / 12 * 100%);
-    flex: none;
-  }
-  .container.desktop-is-column > .child.desktop-is-5:only-child {
-    width: 100%;
-    height: calc(5 / 12 * 100%);
-    flex: none;
-  }
-  .container.desktop-is-column > .child.desktop-is-6:only-child {
-    width: 100%;
-    height: calc(6 / 12 * 100%);
-    flex: none;
-  }
-  .container.desktop-is-column > .child.desktop-is-7:only-child {
-    width: 100%;
-    height: calc(7 / 12 * 100%);
-    flex: none;
-  }
-  .container.desktop-is-column > .child.desktop-is-8:only-child {
-    width: 100%;
-    height: calc(8 / 12 * 100%);
-    flex: none;
-  }
-  .container.desktop-is-column > .child.desktop-is-9:only-child {
-    width: 100%;
-    height: calc(9 / 12 * 100%);
-    flex: none;
-  }
-  .container.desktop-is-column > .child.desktop-is-10:only-child {
-    width: 100%;
-    height: calc(10 / 12 * 100%);
-    flex: none;
-  }
-  .container.desktop-is-column > .child.desktop-is-11:only-child {
-    width: 100%;
-    height: calc(11 / 12 * 100%);
-    flex: none;
-  }
-  .container.desktop-is-column > .child.desktop-is-12:only-child {
-    width: 100%;
-    height: calc(12 / 12 * 100%);
-    flex: none;
-  }
-  .container.desktop-is-column > .child.desktop-is-full {
-    width: 100%;
-  }
-  .container.desktop-is-column > .child.desktop-is-1:only-child {
-    width: 100%;
-    height: calc(1 / 12 * 100%);
-    flex: none;
-  }
-  .container.desktop-is-column > .child.desktop-is-2:only-child {
-    width: 100%;
-    height: calc(2 / 12 * 100%);
-    flex: none;
-  }
-  .container.desktop-is-column > .child.desktop-is-3:only-child {
-    width: 100%;
-    height: calc(3 / 12 * 100%);
-    flex: none;
-  }
-  .container.desktop-is-column > .child.desktop-is-4:only-child {
-    width: 100%;
-    height: calc(4 / 12 * 100%);
-    flex: none;
-  }
-  .container.desktop-is-column > .child.desktop-is-5:only-child {
-    width: 100%;
-    height: calc(5 / 12 * 100%);
-    flex: none;
-  }
-  .container.desktop-is-column > .child.desktop-is-6:only-child {
-    width: 100%;
-    height: calc(6 / 12 * 100%);
-    flex: none;
-  }
-  .container.desktop-is-column > .child.desktop-is-7:only-child {
-    width: 100%;
-    height: calc(7 / 12 * 100%);
-    flex: none;
-  }
-  .container.desktop-is-column > .child.desktop-is-8:only-child {
-    width: 100%;
-    height: calc(8 / 12 * 100%);
-    flex: none;
-  }
-  .container.desktop-is-column > .child.desktop-is-9:only-child {
-    width: 100%;
-    height: calc(9 / 12 * 100%);
-    flex: none;
-  }
-  .container.desktop-is-column > .child.desktop-is-10:only-child {
-    width: 100%;
-    height: calc(10 / 12 * 100%);
-    flex: none;
-  }
-  .container.desktop-is-column > .child.desktop-is-11:only-child {
-    width: 100%;
-    height: calc(11 / 12 * 100%);
-    flex: none;
-  }
-  .container.desktop-is-column > .child.desktop-is-12:only-child {
-    width: 100%;
-    height: calc(12 / 12 * 100%);
-    flex: none;
-  }
-  .container.desktop-is-column > .child.desktop-is-full {
-    width: 100%;
-  }
+}
+
+@media (min-width: 1200px) {
   .container.desktop-is-column.mobile-child-bottom {
     align-items: flex-end;
   }
@@ -2238,195 +2322,207 @@ html {
   .container.big-screen-is-row {
     flex-direction: row;
   }
-  .container.big-screen-is-row > .child.big-screen-is-1:only-child {
+}
+
+@media (min-width: 1800px) and (min-width: 0) {
+  .container.big-screen-is-row > .child.mobile-is-1:only-child {
     width: calc(1 / 12 * 100%);
     height: 100%;
     flex: none;
   }
-  .container.big-screen-is-row > .child.big-screen-is-2:only-child {
+  .container.big-screen-is-row > .child.mobile-is-2:only-child {
     width: calc(2 / 12 * 100%);
     height: 100%;
     flex: none;
   }
-  .container.big-screen-is-row > .child.big-screen-is-3:only-child {
+  .container.big-screen-is-row > .child.mobile-is-3:only-child {
     width: calc(3 / 12 * 100%);
     height: 100%;
     flex: none;
   }
-  .container.big-screen-is-row > .child.big-screen-is-4:only-child {
+  .container.big-screen-is-row > .child.mobile-is-4:only-child {
     width: calc(4 / 12 * 100%);
     height: 100%;
     flex: none;
   }
-  .container.big-screen-is-row > .child.big-screen-is-5:only-child {
+  .container.big-screen-is-row > .child.mobile-is-5:only-child {
     width: calc(5 / 12 * 100%);
     height: 100%;
     flex: none;
   }
-  .container.big-screen-is-row > .child.big-screen-is-6:only-child {
+  .container.big-screen-is-row > .child.mobile-is-6:only-child {
     width: calc(6 / 12 * 100%);
     height: 100%;
     flex: none;
   }
-  .container.big-screen-is-row > .child.big-screen-is-7:only-child {
+  .container.big-screen-is-row > .child.mobile-is-7:only-child {
     width: calc(7 / 12 * 100%);
     height: 100%;
     flex: none;
   }
-  .container.big-screen-is-row > .child.big-screen-is-8:only-child {
+  .container.big-screen-is-row > .child.mobile-is-8:only-child {
     width: calc(8 / 12 * 100%);
     height: 100%;
     flex: none;
   }
-  .container.big-screen-is-row > .child.big-screen-is-9:only-child {
+  .container.big-screen-is-row > .child.mobile-is-9:only-child {
     width: calc(9 / 12 * 100%);
     height: 100%;
     flex: none;
   }
-  .container.big-screen-is-row > .child.big-screen-is-10:only-child {
+  .container.big-screen-is-row > .child.mobile-is-10:only-child {
     width: calc(10 / 12 * 100%);
     height: 100%;
     flex: none;
   }
-  .container.big-screen-is-row > .child.big-screen-is-11:only-child {
+  .container.big-screen-is-row > .child.mobile-is-11:only-child {
     width: calc(11 / 12 * 100%);
     height: 100%;
     flex: none;
   }
-  .container.big-screen-is-row > .child.big-screen-is-12:only-child {
+  .container.big-screen-is-row > .child.mobile-is-12:only-child {
     width: calc(12 / 12 * 100%);
     height: 100%;
     flex: none;
   }
-  .container.big-screen-is-row > .child.big-screen-is-full {
+  .container.big-screen-is-row > .child.mobile-is-full {
     height: 100%;
   }
-  .container.big-screen-is-row > .child.big-screen-is-1:only-child {
+}
+
+@media (min-width: 1800px) and (min-width: 600px) {
+  .container.big-screen-is-row > .child.tablet-is-1:only-child {
     width: calc(1 / 12 * 100%);
     height: 100%;
     flex: none;
   }
-  .container.big-screen-is-row > .child.big-screen-is-2:only-child {
+  .container.big-screen-is-row > .child.tablet-is-2:only-child {
     width: calc(2 / 12 * 100%);
     height: 100%;
     flex: none;
   }
-  .container.big-screen-is-row > .child.big-screen-is-3:only-child {
+  .container.big-screen-is-row > .child.tablet-is-3:only-child {
     width: calc(3 / 12 * 100%);
     height: 100%;
     flex: none;
   }
-  .container.big-screen-is-row > .child.big-screen-is-4:only-child {
+  .container.big-screen-is-row > .child.tablet-is-4:only-child {
     width: calc(4 / 12 * 100%);
     height: 100%;
     flex: none;
   }
-  .container.big-screen-is-row > .child.big-screen-is-5:only-child {
+  .container.big-screen-is-row > .child.tablet-is-5:only-child {
     width: calc(5 / 12 * 100%);
     height: 100%;
     flex: none;
   }
-  .container.big-screen-is-row > .child.big-screen-is-6:only-child {
+  .container.big-screen-is-row > .child.tablet-is-6:only-child {
     width: calc(6 / 12 * 100%);
     height: 100%;
     flex: none;
   }
-  .container.big-screen-is-row > .child.big-screen-is-7:only-child {
+  .container.big-screen-is-row > .child.tablet-is-7:only-child {
     width: calc(7 / 12 * 100%);
     height: 100%;
     flex: none;
   }
-  .container.big-screen-is-row > .child.big-screen-is-8:only-child {
+  .container.big-screen-is-row > .child.tablet-is-8:only-child {
     width: calc(8 / 12 * 100%);
     height: 100%;
     flex: none;
   }
-  .container.big-screen-is-row > .child.big-screen-is-9:only-child {
+  .container.big-screen-is-row > .child.tablet-is-9:only-child {
     width: calc(9 / 12 * 100%);
     height: 100%;
     flex: none;
   }
-  .container.big-screen-is-row > .child.big-screen-is-10:only-child {
+  .container.big-screen-is-row > .child.tablet-is-10:only-child {
     width: calc(10 / 12 * 100%);
     height: 100%;
     flex: none;
   }
-  .container.big-screen-is-row > .child.big-screen-is-11:only-child {
+  .container.big-screen-is-row > .child.tablet-is-11:only-child {
     width: calc(11 / 12 * 100%);
     height: 100%;
     flex: none;
   }
-  .container.big-screen-is-row > .child.big-screen-is-12:only-child {
+  .container.big-screen-is-row > .child.tablet-is-12:only-child {
     width: calc(12 / 12 * 100%);
     height: 100%;
     flex: none;
   }
-  .container.big-screen-is-row > .child.big-screen-is-full {
+  .container.big-screen-is-row > .child.tablet-is-full {
     height: 100%;
   }
-  .container.big-screen-is-row > .child.big-screen-is-1:only-child {
+}
+
+@media (min-width: 1800px) and (min-width: 1200px) {
+  .container.big-screen-is-row > .child.desktop-is-1:only-child {
     width: calc(1 / 12 * 100%);
     height: 100%;
     flex: none;
   }
-  .container.big-screen-is-row > .child.big-screen-is-2:only-child {
+  .container.big-screen-is-row > .child.desktop-is-2:only-child {
     width: calc(2 / 12 * 100%);
     height: 100%;
     flex: none;
   }
-  .container.big-screen-is-row > .child.big-screen-is-3:only-child {
+  .container.big-screen-is-row > .child.desktop-is-3:only-child {
     width: calc(3 / 12 * 100%);
     height: 100%;
     flex: none;
   }
-  .container.big-screen-is-row > .child.big-screen-is-4:only-child {
+  .container.big-screen-is-row > .child.desktop-is-4:only-child {
     width: calc(4 / 12 * 100%);
     height: 100%;
     flex: none;
   }
-  .container.big-screen-is-row > .child.big-screen-is-5:only-child {
+  .container.big-screen-is-row > .child.desktop-is-5:only-child {
     width: calc(5 / 12 * 100%);
     height: 100%;
     flex: none;
   }
-  .container.big-screen-is-row > .child.big-screen-is-6:only-child {
+  .container.big-screen-is-row > .child.desktop-is-6:only-child {
     width: calc(6 / 12 * 100%);
     height: 100%;
     flex: none;
   }
-  .container.big-screen-is-row > .child.big-screen-is-7:only-child {
+  .container.big-screen-is-row > .child.desktop-is-7:only-child {
     width: calc(7 / 12 * 100%);
     height: 100%;
     flex: none;
   }
-  .container.big-screen-is-row > .child.big-screen-is-8:only-child {
+  .container.big-screen-is-row > .child.desktop-is-8:only-child {
     width: calc(8 / 12 * 100%);
     height: 100%;
     flex: none;
   }
-  .container.big-screen-is-row > .child.big-screen-is-9:only-child {
+  .container.big-screen-is-row > .child.desktop-is-9:only-child {
     width: calc(9 / 12 * 100%);
     height: 100%;
     flex: none;
   }
-  .container.big-screen-is-row > .child.big-screen-is-10:only-child {
+  .container.big-screen-is-row > .child.desktop-is-10:only-child {
     width: calc(10 / 12 * 100%);
     height: 100%;
     flex: none;
   }
-  .container.big-screen-is-row > .child.big-screen-is-11:only-child {
+  .container.big-screen-is-row > .child.desktop-is-11:only-child {
     width: calc(11 / 12 * 100%);
     height: 100%;
     flex: none;
   }
-  .container.big-screen-is-row > .child.big-screen-is-12:only-child {
+  .container.big-screen-is-row > .child.desktop-is-12:only-child {
     width: calc(12 / 12 * 100%);
     height: 100%;
     flex: none;
   }
-  .container.big-screen-is-row > .child.big-screen-is-full {
+  .container.big-screen-is-row > .child.desktop-is-full {
     height: 100%;
   }
+}
+
+@media (min-width: 1800px) {
   .container.big-screen-is-row > .child.big-screen-is-1:only-child {
     width: calc(1 / 12 * 100%);
     height: 100%;
@@ -2517,195 +2613,207 @@ html {
   .container.big-screen-is-column {
     flex-direction: column;
   }
-  .container.big-screen-is-column > .child.big-screen-is-1:only-child {
+}
+
+@media (min-width: 1800px) and (min-width: 0) {
+  .container.big-screen-is-column > .child.mobile-is-1:only-child {
     width: 100%;
     height: calc(1 / 12 * 100%);
     flex: none;
   }
-  .container.big-screen-is-column > .child.big-screen-is-2:only-child {
+  .container.big-screen-is-column > .child.mobile-is-2:only-child {
     width: 100%;
     height: calc(2 / 12 * 100%);
     flex: none;
   }
-  .container.big-screen-is-column > .child.big-screen-is-3:only-child {
+  .container.big-screen-is-column > .child.mobile-is-3:only-child {
     width: 100%;
     height: calc(3 / 12 * 100%);
     flex: none;
   }
-  .container.big-screen-is-column > .child.big-screen-is-4:only-child {
+  .container.big-screen-is-column > .child.mobile-is-4:only-child {
     width: 100%;
     height: calc(4 / 12 * 100%);
     flex: none;
   }
-  .container.big-screen-is-column > .child.big-screen-is-5:only-child {
+  .container.big-screen-is-column > .child.mobile-is-5:only-child {
     width: 100%;
     height: calc(5 / 12 * 100%);
     flex: none;
   }
-  .container.big-screen-is-column > .child.big-screen-is-6:only-child {
+  .container.big-screen-is-column > .child.mobile-is-6:only-child {
     width: 100%;
     height: calc(6 / 12 * 100%);
     flex: none;
   }
-  .container.big-screen-is-column > .child.big-screen-is-7:only-child {
+  .container.big-screen-is-column > .child.mobile-is-7:only-child {
     width: 100%;
     height: calc(7 / 12 * 100%);
     flex: none;
   }
-  .container.big-screen-is-column > .child.big-screen-is-8:only-child {
+  .container.big-screen-is-column > .child.mobile-is-8:only-child {
     width: 100%;
     height: calc(8 / 12 * 100%);
     flex: none;
   }
-  .container.big-screen-is-column > .child.big-screen-is-9:only-child {
+  .container.big-screen-is-column > .child.mobile-is-9:only-child {
     width: 100%;
     height: calc(9 / 12 * 100%);
     flex: none;
   }
-  .container.big-screen-is-column > .child.big-screen-is-10:only-child {
+  .container.big-screen-is-column > .child.mobile-is-10:only-child {
     width: 100%;
     height: calc(10 / 12 * 100%);
     flex: none;
   }
-  .container.big-screen-is-column > .child.big-screen-is-11:only-child {
+  .container.big-screen-is-column > .child.mobile-is-11:only-child {
     width: 100%;
     height: calc(11 / 12 * 100%);
     flex: none;
   }
-  .container.big-screen-is-column > .child.big-screen-is-12:only-child {
+  .container.big-screen-is-column > .child.mobile-is-12:only-child {
     width: 100%;
     height: calc(12 / 12 * 100%);
     flex: none;
   }
-  .container.big-screen-is-column > .child.big-screen-is-full {
+  .container.big-screen-is-column > .child.mobile-is-full {
     width: 100%;
   }
-  .container.big-screen-is-column > .child.big-screen-is-1:only-child {
+}
+
+@media (min-width: 1800px) and (min-width: 600px) {
+  .container.big-screen-is-column > .child.tablet-is-1:only-child {
     width: 100%;
     height: calc(1 / 12 * 100%);
     flex: none;
   }
-  .container.big-screen-is-column > .child.big-screen-is-2:only-child {
+  .container.big-screen-is-column > .child.tablet-is-2:only-child {
     width: 100%;
     height: calc(2 / 12 * 100%);
     flex: none;
   }
-  .container.big-screen-is-column > .child.big-screen-is-3:only-child {
+  .container.big-screen-is-column > .child.tablet-is-3:only-child {
     width: 100%;
     height: calc(3 / 12 * 100%);
     flex: none;
   }
-  .container.big-screen-is-column > .child.big-screen-is-4:only-child {
+  .container.big-screen-is-column > .child.tablet-is-4:only-child {
     width: 100%;
     height: calc(4 / 12 * 100%);
     flex: none;
   }
-  .container.big-screen-is-column > .child.big-screen-is-5:only-child {
+  .container.big-screen-is-column > .child.tablet-is-5:only-child {
     width: 100%;
     height: calc(5 / 12 * 100%);
     flex: none;
   }
-  .container.big-screen-is-column > .child.big-screen-is-6:only-child {
+  .container.big-screen-is-column > .child.tablet-is-6:only-child {
     width: 100%;
     height: calc(6 / 12 * 100%);
     flex: none;
   }
-  .container.big-screen-is-column > .child.big-screen-is-7:only-child {
+  .container.big-screen-is-column > .child.tablet-is-7:only-child {
     width: 100%;
     height: calc(7 / 12 * 100%);
     flex: none;
   }
-  .container.big-screen-is-column > .child.big-screen-is-8:only-child {
+  .container.big-screen-is-column > .child.tablet-is-8:only-child {
     width: 100%;
     height: calc(8 / 12 * 100%);
     flex: none;
   }
-  .container.big-screen-is-column > .child.big-screen-is-9:only-child {
+  .container.big-screen-is-column > .child.tablet-is-9:only-child {
     width: 100%;
     height: calc(9 / 12 * 100%);
     flex: none;
   }
-  .container.big-screen-is-column > .child.big-screen-is-10:only-child {
+  .container.big-screen-is-column > .child.tablet-is-10:only-child {
     width: 100%;
     height: calc(10 / 12 * 100%);
     flex: none;
   }
-  .container.big-screen-is-column > .child.big-screen-is-11:only-child {
+  .container.big-screen-is-column > .child.tablet-is-11:only-child {
     width: 100%;
     height: calc(11 / 12 * 100%);
     flex: none;
   }
-  .container.big-screen-is-column > .child.big-screen-is-12:only-child {
+  .container.big-screen-is-column > .child.tablet-is-12:only-child {
     width: 100%;
     height: calc(12 / 12 * 100%);
     flex: none;
   }
-  .container.big-screen-is-column > .child.big-screen-is-full {
+  .container.big-screen-is-column > .child.tablet-is-full {
     width: 100%;
   }
-  .container.big-screen-is-column > .child.big-screen-is-1:only-child {
+}
+
+@media (min-width: 1800px) and (min-width: 1200px) {
+  .container.big-screen-is-column > .child.desktop-is-1:only-child {
     width: 100%;
     height: calc(1 / 12 * 100%);
     flex: none;
   }
-  .container.big-screen-is-column > .child.big-screen-is-2:only-child {
+  .container.big-screen-is-column > .child.desktop-is-2:only-child {
     width: 100%;
     height: calc(2 / 12 * 100%);
     flex: none;
   }
-  .container.big-screen-is-column > .child.big-screen-is-3:only-child {
+  .container.big-screen-is-column > .child.desktop-is-3:only-child {
     width: 100%;
     height: calc(3 / 12 * 100%);
     flex: none;
   }
-  .container.big-screen-is-column > .child.big-screen-is-4:only-child {
+  .container.big-screen-is-column > .child.desktop-is-4:only-child {
     width: 100%;
     height: calc(4 / 12 * 100%);
     flex: none;
   }
-  .container.big-screen-is-column > .child.big-screen-is-5:only-child {
+  .container.big-screen-is-column > .child.desktop-is-5:only-child {
     width: 100%;
     height: calc(5 / 12 * 100%);
     flex: none;
   }
-  .container.big-screen-is-column > .child.big-screen-is-6:only-child {
+  .container.big-screen-is-column > .child.desktop-is-6:only-child {
     width: 100%;
     height: calc(6 / 12 * 100%);
     flex: none;
   }
-  .container.big-screen-is-column > .child.big-screen-is-7:only-child {
+  .container.big-screen-is-column > .child.desktop-is-7:only-child {
     width: 100%;
     height: calc(7 / 12 * 100%);
     flex: none;
   }
-  .container.big-screen-is-column > .child.big-screen-is-8:only-child {
+  .container.big-screen-is-column > .child.desktop-is-8:only-child {
     width: 100%;
     height: calc(8 / 12 * 100%);
     flex: none;
   }
-  .container.big-screen-is-column > .child.big-screen-is-9:only-child {
+  .container.big-screen-is-column > .child.desktop-is-9:only-child {
     width: 100%;
     height: calc(9 / 12 * 100%);
     flex: none;
   }
-  .container.big-screen-is-column > .child.big-screen-is-10:only-child {
+  .container.big-screen-is-column > .child.desktop-is-10:only-child {
     width: 100%;
     height: calc(10 / 12 * 100%);
     flex: none;
   }
-  .container.big-screen-is-column > .child.big-screen-is-11:only-child {
+  .container.big-screen-is-column > .child.desktop-is-11:only-child {
     width: 100%;
     height: calc(11 / 12 * 100%);
     flex: none;
   }
-  .container.big-screen-is-column > .child.big-screen-is-12:only-child {
+  .container.big-screen-is-column > .child.desktop-is-12:only-child {
     width: 100%;
     height: calc(12 / 12 * 100%);
     flex: none;
   }
-  .container.big-screen-is-column > .child.big-screen-is-full {
+  .container.big-screen-is-column > .child.desktop-is-full {
     width: 100%;
   }
+}
+
+@media (min-width: 1800px) {
   .container.big-screen-is-column > .child.big-screen-is-1:only-child {
     width: 100%;
     height: calc(1 / 12 * 100%);
