@@ -1,5 +1,5 @@
 %child {
-    @each $bp in $breakpoints {
+    @each $bp, $v in $breakpoints {
         @include for-size(#{$bp}) {
             // for child size
             .child {

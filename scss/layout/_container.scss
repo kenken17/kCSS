@@ -4,40 +4,76 @@
     display: flex;
     flex-direction: column;
 
-    @each $bp in $breakpoints {
-        @include for-size(#{$bp}) {
+    > .child {
+        flex: 1;
+    }
+
+    @extend %child;
+}
+
+@mixin for-child-size($type, $bp) {
+    @if $type == row {
+        @for $i from 1 through $flex-col-size {
+            &.#{$bp}-is-#{$i} {
+                &:only-child {
+                    width: calc(#{$i} / #{$flex-col-size} * 100%);
+                    height: 100%;
+                    flex: none;
+                }
+            }
+        }
+    }
+
+    @if $type == column {
+        @for $i from 1 through $flex-col-size {
+            &.#{$bp}-is-#{$i} {
+                &:only-child {
+                    width: 100%;
+                    height: calc(#{$i} / #{$flex-col-size} * 100%);
+                    flex: none;
+                }
+            }
+        }
+    }
+}
+
+@each $bp, $v in $breakpoints {
+    @include for-size(#{$bp}) {
+        .container {
             &.#{$bp}-is-row {
                 flex-direction: row;
 
-                > .child {
-                    @each $bp in $breakpoints {
-                        @include for-size(#{$bp}) {
+                @each $bp_in, $v_in in $breakpoints {
+                    // If the bp is the same no need to AND the same @media
+                    @if #{$v} == #{$v_in} {
+                        & > .child {
                             // for child size
-                            @for $i from 1 through $flex-col-size {
-                                &.#{$bp}-is-#{$i} {
-                                    &:only-child {
-                                        width: calc(
-                                            #{$i} / #{$flex-col-size} * 100%
-                                        );
-                                        height: 100%;
-                                        flex: none;
-                                    }
-                                }
+                            @include for-child-size(row, #{$bp});
+
+                            &.#{$bp}-is-full {
+                                height: 100%;
                             }
                         }
+                    } @else {
+                        @include for-size(#{$bp_in}) {
+                            & > .child {
+                                // for child size
+                                @include for-child-size(row, #{$bp_in});
 
-                        &.#{$bp}-is-full {
-                            height: 100%;
+                                &.#{$bp_in}-is-full {
+                                    height: 100%;
+                                }
+                            }
                         }
                     }
                 }
 
-                @each $bp in $breakpoints {
-                    &.#{$bp}-child-right {
+                @each $bp_in, $v_in in $breakpoints {
+                    &.#{$bp_in}-child-right {
                         justify-content: flex-end;
                     }
 
-                    &.#{$bp}-child-left {
+                    &.#{$bp_in}-child-left {
                         justify-content: flex-start;
                     }
                 }
@@ -46,35 +82,37 @@
             &.#{$bp}-is-column {
                 flex-direction: column;
 
-                > .child {
-                    @each $bp in $breakpoints {
-                        @include for-size(#{$bp}) {
+                @each $bp_in, $v_in in $breakpoints {
+                    // If the bp is the same no need to AND the same @media
+                    @if #{$v} == #{$v_in} {
+                        & > .child {
                             // for child size
-                            @for $i from 1 through $flex-col-size {
-                                &.#{$bp}-is-#{$i} {
-                                    &:only-child {
-                                        width: 100%;
-                                        height: calc(
-                                            #{$i} / #{$flex-col-size} * 100%
-                                        );
-                                        flex: none;
-                                    }
-                                }
+                            @include for-child-size(column, #{$bp});
+
+                            &.#{$bp}-is-full {
+                                width: 100%;
                             }
                         }
+                    } @else {
+                        @include for-size(#{$bp_in}) {
+                            & > .child {
+                                // for child size
+                                @include for-child-size(column, #{$bp_in});
 
-                        &.#{$bp}-is-full {
-                            width: 100%;
+                                &.#{$bp_in}-is-full {
+                                    width: 100%;
+                                }
+                            }
                         }
                     }
                 }
 
-                @each $bp in $breakpoints {
-                    &.#{$bp}-child-bottom {
+                @each $bp_in, $v_in in $breakpoints {
+                    &.#{$bp_in}-child-bottom {
                         align-items: flex-end;
                     }
 
-                    &.#{$bp}-child-top {
+                    &.#{$bp_in}-child-top {
                         align-items: flex-start;
                     }
                 }
@@ -106,10 +144,4 @@
             }
         }
     }
-
-    .child {
-        flex: 1;
-    }
-
-    @extend %child;
 }

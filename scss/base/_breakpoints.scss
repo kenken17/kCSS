@@ -3,7 +3,12 @@ $tablet: 600px !default;
 $desktop: 1200px !default;
 $big-screen: 1800px !default;
 
-$breakpoints: ("mobile", "tablet", "desktop", "big-screen");
+$breakpoints: (
+    "mobile": $mobile,
+    "tablet": $tablet,
+    "desktop": $desktop,
+    "big-screen": $big-screen
+);
 
 @mixin for-size($size) {
     @if $size == mobile {
