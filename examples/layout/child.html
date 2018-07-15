@@ -7,11 +7,18 @@
         <link rel="stylesheet" href="../../css/debug.css">
         <title>Flex</title>
     </head>
-    <body>
-        <div class="container mobile-is-row mobile-is-full">
-            <div class="child">a</div>
-            <div class="child">b</div>
-            <div class="child mobile-is-2">c</div>
+    <style type="text/css" media="screen">
+        .child-a,
+        .child-b,
+        .child-c {
+            min-height: 100px;
+        }
+    </style>
+    <body style="height: 100vh;">
+        <div class="container main-container mobile-is-row tablet-is-column desktop-is-row big-screen-is-column mobile-is-full">
+            <div class="child child-a">a</div>
+            <div class="child child-b">b</div>
+            <div class="child child-c mobile-is-2">c</div>
         </div>
     </body>
 </html>
