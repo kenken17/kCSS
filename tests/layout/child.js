@@ -105,7 +105,12 @@ module.exports = {
             this.assert.equal(typeof result, "object");
             this.assert.equal(result.status, 0);
             this.assert.equal(result.value.width, 600);
-            this.assert.equal(result.value.height, mainContainerHeight / 4);
+
+            // Looks like calc is not as accurate, just to cater the 0.5px off..
+            this.assert.equal(
+                result.value.height,
+                Math.ceil(mainContainerHeight / 4)
+            );
         });
 
         client.getLocation(".child-a", function(result) {
@@ -128,14 +133,19 @@ module.exports = {
             this.assert.equal(typeof result, "object");
             this.assert.equal(result.status, 0);
             this.assert.equal(result.value.width, 600);
-            this.assert.equal(result.value.height, mainContainerHeight / 4);
+
+            // Looks like calc is not as accurate, just to cater the 0.5px off..
+            this.assert.equal(
+                result.value.height,
+                Math.floor(mainContainerHeight / 4)
+            );
         });
 
         client.getLocation(".child-b", function(result) {
             this.assert.equal(typeof result, "object");
             this.assert.equal(result.status, 0);
             this.assert.equal(result.value.x, 0);
-            this.assert.equal(result.value.y, 100);
+            this.assert.equal(result.value.y, mainContainerHeight / 4);
         });
 
         client.end();
