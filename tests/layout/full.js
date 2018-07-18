@@ -93,7 +93,7 @@ module.exports = {
         client.end();
     },
 
-    "Mobile: Should see child-c-1 as half of the child-c container 200px widht"(client) {
+    "Mobile: Should see child-c-1 as half of the child-c container 200px width"(client) {
         client
             .url("http://localhost:8080/examples/layout/full.html")
             .resizeWindow(mobile.width, mobile.height)
@@ -139,4 +139,363 @@ module.exports = {
         client.end();
     },
 
+    "Tablet: Should see child-a on the left"(client) {
+        client
+            .url("http://localhost:8080/examples/layout/full.html")
+            .resizeWindow(tablet.width, tablet.height)
+            .waitForElementVisible(".main-container");
+
+        // First set the window height
+        client.getElementSize(".main-container", function(result) {
+            mainContainerHeight = result.value.height;
+        });
+
+        client.getElementSize(".child-a", function(result) {
+            this.assert.equal(typeof result, "object");
+            this.assert.equal(result.status, 0);
+            this.assert.equal(result.value.width, tablet.width / 3);
+            this.assert.equal(result.value.height, mainContainerHeight);
+        });
+
+        client.getLocation(".child-a", function(result) {
+            this.assert.equal(typeof result, "object");
+            this.assert.equal(result.status, 0);
+            this.assert.equal(result.value.x, 0);
+            this.assert.equal(result.value.y, 0);
+        });
+
+        client.end();
+    },
+
+    "Tablet: Should see child-b in the middle"(client) {
+        client
+            .url("http://localhost:8080/examples/layout/full.html")
+            .resizeWindow(tablet.width, tablet.height)
+            .waitForElementVisible(".main-container");
+
+        client.getElementSize(".child-b", function(result) {
+            this.assert.equal(typeof result, "object");
+            this.assert.equal(result.status, 0);
+            this.assert.equal(result.value.width, tablet.width / 3);
+            this.assert.equal(result.value.height, mainContainerHeight);
+        });
+
+        client.getLocation(".child-b", function(result) {
+            this.assert.equal(typeof result, "object");
+            this.assert.equal(result.status, 0);
+            this.assert.equal(result.value.x, tablet.width / 3);
+            this.assert.equal(result.value.y, 0);
+        });
+
+        client.end();
+    },
+
+    "Tablet: Should see child-c split into two cells"(client) {
+        client
+            .url("http://localhost:8080/examples/layout/full.html")
+            .resizeWindow(tablet.width, tablet.height)
+            .waitForElementVisible(".main-container");
+
+        client.getElementSize(".child-c", function(result) {
+            this.assert.equal(typeof result, "object");
+            this.assert.equal(result.status, 0);
+            this.assert.equal(result.value.width, tablet.width / 3);
+            this.assert.equal(result.value.height, mainContainerHeight);
+        });
+
+        client.getLocation(".child-c", function(result) {
+            this.assert.equal(typeof result, "object");
+            this.assert.equal(result.status, 0);
+            this.assert.equal(result.value.x, tablet.width / 3 * 2);
+            this.assert.equal(result.value.y, 0);
+        });
+
+        client.end();
+    },
+
+    "Tablet: Should see child-c-1 as half of the child-c container at top 200px width"(client) {
+        client
+            .url("http://localhost:8080/examples/layout/full.html")
+            .resizeWindow(tablet.width, tablet.height)
+            .waitForElementVisible(".main-container");
+
+        client.getElementSize(".child-c-1", function(result) {
+            this.assert.equal(typeof result, "object");
+            this.assert.equal(result.status, 0);
+            this.assert.equal(result.value.width, tablet.width / 3);
+            this.assert.equal(result.value.height, mainContainerHeight / 2);
+        });
+
+        client.getLocation(".child-c-1", function(result) {
+            this.assert.equal(typeof result, "object");
+            this.assert.equal(result.status, 0);
+            this.assert.equal(result.value.x, tablet.width / 3 * 2);
+            this.assert.equal(result.value.y, 0);
+        });
+
+        client.end();
+    },
+
+    "Tablet: Should see child-c-2 as half at bottom"(client) {
+        client
+            .url("http://localhost:8080/examples/layout/full.html")
+            .resizeWindow(tablet.width, tablet.height)
+            .waitForElementVisible(".main-container");
+
+        client.getElementSize(".child-c-2", function(result) {
+            this.assert.equal(typeof result, "object");
+            this.assert.equal(result.status, 0);
+            this.assert.equal(result.value.width, tablet.width / 3);
+            this.assert.equal(result.value.height, mainContainerHeight / 2);
+        });
+
+        client.getLocation(".child-c-2", function(result) {
+            this.assert.equal(typeof result, "object");
+            this.assert.equal(result.status, 0);
+            this.assert.equal(result.value.x, tablet.width / 3 * 2);
+            this.assert.equal(result.value.y, mainContainerHeight / 2);
+        });
+
+        client.end();
+    },
+
+    "Desktop: Should see child-a at top"(client) {
+        client
+            .url("http://localhost:8080/examples/layout/full.html")
+            .resizeWindow(desktop.width, desktop.height)
+            .waitForElementVisible(".main-container");
+
+        // First set the window height
+        client.getElementSize(".main-container", function(result) {
+            mainContainerHeight = result.value.height;
+        });
+
+        client.getElementSize(".child-a", function(result) {
+            this.assert.equal(typeof result, "object");
+            this.assert.equal(result.status, 0);
+            this.assert.equal(result.value.width, desktop.width);
+            this.assert.equal(result.value.height, mainContainerHeight / 3);
+        });
+
+        client.getLocation(".child-a", function(result) {
+            this.assert.equal(typeof result, "object");
+            this.assert.equal(result.status, 0);
+            this.assert.equal(result.value.x, 0);
+            this.assert.equal(result.value.y, 0);
+        });
+
+        client.end();
+    },
+
+    "Desktop: Should see child-b in the middle"(client) {
+        client
+            .url("http://localhost:8080/examples/layout/full.html")
+            .resizeWindow(desktop.width, desktop.height)
+            .waitForElementVisible(".main-container");
+
+        client.getElementSize(".child-b", function(result) {
+            this.assert.equal(typeof result, "object");
+            this.assert.equal(result.status, 0);
+            this.assert.equal(result.value.width, desktop.width);
+            this.assert.equal(result.value.height, mainContainerHeight / 3);
+        });
+
+        client.getLocation(".child-b", function(result) {
+            this.assert.equal(typeof result, "object");
+            this.assert.equal(result.status, 0);
+            this.assert.equal(result.value.x, 0);
+            this.assert.equal(result.value.y, mainContainerHeight / 3);
+        });
+
+        client.end();
+    },
+
+    "Desktop: Should see child-c split into two cells"(client) {
+        client
+            .url("http://localhost:8080/examples/layout/full.html")
+            .resizeWindow(desktop.width, desktop.height)
+            .waitForElementVisible(".main-container");
+
+        client.getElementSize(".child-c", function(result) {
+            this.assert.equal(typeof result, "object");
+            this.assert.equal(result.status, 0);
+            this.assert.equal(result.value.width, desktop.width);
+            this.assert.equal(result.value.height, mainContainerHeight / 3);
+        });
+
+        client.getLocation(".child-c", function(result) {
+            this.assert.equal(typeof result, "object");
+            this.assert.equal(result.status, 0);
+            this.assert.equal(result.value.x, 0);
+            this.assert.equal(result.value.y, mainContainerHeight / 3 * 2);
+        });
+
+        client.end();
+    },
+
+    "Desktop: Should see child-c-1 as half of the child-c container 200px width"(client) {
+        client
+            .url("http://localhost:8080/examples/layout/full.html")
+            .resizeWindow(desktop.width, desktop.height)
+            .waitForElementVisible(".main-container");
+
+        client.getElementSize(".child-c-1", function(result) {
+            this.assert.equal(typeof result, "object");
+            this.assert.equal(result.status, 0);
+            this.assert.equal(result.value.width, desktop.width / 2);
+            this.assert.equal(result.value.height, mainContainerHeight / 3 );
+        });
+
+        client.getLocation(".child-c-1", function(result) {
+            this.assert.equal(typeof result, "object");
+            this.assert.equal(result.status, 0);
+            this.assert.equal(result.value.x, 0);
+            this.assert.equal(result.value.y, mainContainerHeight / 3 * 2);
+        });
+
+        client.end();
+    },
+
+    "Desktop: Should see child-c-2 as half on right"(client) {
+        client
+            .url("http://localhost:8080/examples/layout/full.html")
+            .resizeWindow(desktop.width, desktop.height)
+            .waitForElementVisible(".main-container");
+
+        client.getElementSize(".child-c-2", function(result) {
+            this.assert.equal(typeof result, "object");
+            this.assert.equal(result.status, 0);
+            this.assert.equal(result.value.width, desktop.width / 2);
+            this.assert.equal(result.value.height, mainContainerHeight / 3);
+        });
+
+        client.getLocation(".child-c-2", function(result) {
+            this.assert.equal(typeof result, "object");
+            this.assert.equal(result.status, 0);
+            this.assert.equal(result.value.x, desktop.width / 2);
+            this.assert.equal(result.value.y, mainContainerHeight / 3 * 2);
+        });
+
+        client.end();
+    },
+
+    "Big Screen: Should see child-a on the left"(client) {
+        client
+            .url("http://localhost:8080/examples/layout/full.html")
+            .resizeWindow(bigScreen.width, bigScreen.height)
+            .waitForElementVisible(".main-container");
+
+        // First set the window height
+        client.getElementSize(".main-container", function(result) {
+            mainContainerHeight = result.value.height;
+        });
+
+        client.getElementSize(".child-a", function(result) {
+            this.assert.equal(typeof result, "object");
+            this.assert.equal(result.status, 0);
+            this.assert.equal(result.value.width, bigScreen.width / 3);
+            this.assert.equal(result.value.height, mainContainerHeight);
+        });
+
+        client.getLocation(".child-a", function(result) {
+            this.assert.equal(typeof result, "object");
+            this.assert.equal(result.status, 0);
+            this.assert.equal(result.value.x, 0);
+            this.assert.equal(result.value.y, 0);
+        });
+
+        client.end();
+    },
+
+    "Big Screen: Should see child-b in the middle"(client) {
+        client
+            .url("http://localhost:8080/examples/layout/full.html")
+            .resizeWindow(bigScreen.width, bigScreen.height)
+            .waitForElementVisible(".main-container");
+
+        client.getElementSize(".child-b", function(result) {
+            this.assert.equal(typeof result, "object");
+            this.assert.equal(result.status, 0);
+            this.assert.equal(result.value.width, bigScreen.width / 3);
+            this.assert.equal(result.value.height, mainContainerHeight);
+        });
+
+        client.getLocation(".child-b", function(result) {
+            this.assert.equal(typeof result, "object");
+            this.assert.equal(result.status, 0);
+            this.assert.equal(result.value.x, bigScreen.width / 3);
+            this.assert.equal(result.value.y, 0);
+        });
+
+        client.end();
+    },
+
+    "Big Screen: Should see child-c split into two cells"(client) {
+        client
+            .url("http://localhost:8080/examples/layout/full.html")
+            .resizeWindow(bigScreen.width, bigScreen.height)
+            .waitForElementVisible(".main-container");
+
+        client.getElementSize(".child-c", function(result) {
+            this.assert.equal(typeof result, "object");
+            this.assert.equal(result.status, 0);
+            this.assert.equal(result.value.width, bigScreen.width / 3);
+            this.assert.equal(result.value.height, mainContainerHeight);
+        });
+
+        client.getLocation(".child-c", function(result) {
+            this.assert.equal(typeof result, "object");
+            this.assert.equal(result.status, 0);
+            this.assert.equal(result.value.x, bigScreen.width / 3 * 2);
+            this.assert.equal(result.value.y, 0);
+        });
+
+        client.end();
+    },
+
+    "Big Screen: Should see child-c-1 as half of the child-c container at top 200px width"(client) {
+        client
+            .url("http://localhost:8080/examples/layout/full.html")
+            .resizeWindow(bigScreen.width, bigScreen.height)
+            .waitForElementVisible(".main-container");
+
+        client.getElementSize(".child-c-1", function(result) {
+            this.assert.equal(typeof result, "object");
+            this.assert.equal(result.status, 0);
+            this.assert.equal(result.value.width, bigScreen.width / 3);
+            this.assert.equal(result.value.height, mainContainerHeight / 2);
+        });
+
+        client.getLocation(".child-c-1", function(result) {
+            this.assert.equal(typeof result, "object");
+            this.assert.equal(result.status, 0);
+            this.assert.equal(result.value.x, bigScreen.width / 3 * 2);
+            this.assert.equal(result.value.y, 0);
+        });
+
+        client.end();
+    },
+
+    "Big Screen: Should see child-c-2 as half at bottom"(client) {
+        client
+            .url("http://localhost:8080/examples/layout/full.html")
+            .resizeWindow(bigScreen.width, bigScreen.height)
+            .waitForElementVisible(".main-container");
+
+        client.getElementSize(".child-c-2", function(result) {
+            this.assert.equal(typeof result, "object");
+            this.assert.equal(result.status, 0);
+            this.assert.equal(result.value.width, bigScreen.width / 3);
+            this.assert.equal(result.value.height, mainContainerHeight / 2);
+        });
+
+        client.getLocation(".child-c-2", function(result) {
+            this.assert.equal(typeof result, "object");
+            this.assert.equal(result.status, 0);
+            this.assert.equal(result.value.x, bigScreen.width / 3 * 2);
+            this.assert.equal(result.value.y, mainContainerHeight / 2);
+        });
+
+        client.end();
+    },
 };
