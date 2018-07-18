@@ -8,14 +8,14 @@
         <title>Flex</title>
     </head>
     <body style="height: 100vh;">
-        <div class="container mobile-is-row mobile-is-full">
-            <div class="child">a</div>
-            <div class="child">b</div>
-            <div class="child">
-                <div class="container mobile-is-row mobile-is-full">
-                    <div class="child">c1</div>
-                    <div class="child">c2</div>
-                </div>    
+        <div class="container main-container tablet-is-row desktop-is-column big-screen-is-row mobile-is-full">
+            <div class="child child-a">a</div>
+            <div class="child child-b">b</div>
+            <div class="child child-c">
+                <div class="container container-child-c mobile-is-row tablet-is-column desktop-is-row big-screen-is-column mobile-is-full">
+                    <div class="child child-c-1">c1</div>
+                    <div class="child child-c-2">c2</div>
+                </div>
             </div>
         </div>
     </body>
