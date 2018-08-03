@@ -6,22 +6,26 @@
         <link rel="stylesheet" href="../../css/kCSS.css">
         <link rel="stylesheet" href="../../css/debug.css">
         <title>Flex</title>
+        <style type="text/css" media="screen">
+            .child {
+                padding: 0;
+            }
+
+            .child-a,
+            .child-b {
+                height: 100px;
+            }
+
+            .child-c {
+                min-height: 100px;
+            }
+
+            .child-c-1,
+            .child-c-2 {
+                height: 100px;
+            }
+        </style>
     </head>
-    <style type="text/css" media="screen">
-        .child-a,
-        .child-b {
-            height: 100px;
-        }
-
-        .child-c {
-            min-height: 100px;
-        }
-
-        .child-c-1,
-        .child-c-2 {
-            height: 100px;
-        }
-    </style>
     <body>
         <div class="container main-container tablet-is-row desktop-is-column big-screen-is-row">
             <div class="child child-a">a</div>
