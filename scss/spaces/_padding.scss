@@ -1,0 +1,29 @@
+.child {
+    padding: $padding;
+
+    @each $bp, $v in $breakpoints {
+        @include for-size(#{$bp}) {
+            &.#{$bp}-no-padding {
+                padding: 0;
+            }
+
+            &.#{$bp}-padding {
+                padding: $padding;
+            }
+        }
+    }
+}
+
+.container {
+    @each $bp, $v in $breakpoints {
+        @include for-size(#{$bp}) {
+            &.#{$bp}-no-padding {
+                padding: 0;
+            }
+
+            &.#{$bp}-padding {
+                padding: $padding;
+            }
+        }
+    }
+}

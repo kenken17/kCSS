@@ -1,0 +1,14 @@
+.container,
+.child {
+    @each $bp, $v in $breakpoints {
+        @include for-size(#{$bp}) {
+            &.#{$bp}-no-margin {
+                margin: 0;
+            }
+
+            &.#{$bp}-margin {
+                margin: $margin;
+            }
+        }
+    }
+}

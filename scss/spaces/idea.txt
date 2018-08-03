@@ -1,0 +1,7 @@
+Padding:
+    - The child has defualt 8px padding
+    - The container has NO default margin, but can add [break-point]-maring for 8px margin.
+
+Margin:
+    - The child has NO default margin, but can add [break-point]-margin for 8px margin.
+    - The container has NO default margin, but can add [break-point]-maring for 8px margin.

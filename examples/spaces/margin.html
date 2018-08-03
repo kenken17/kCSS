@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../../css/kCSS.css">
+        <link rel="stylesheet" href="../../css/debug.css">
+        <title>Flex</title>
+    </head>
+    <style type="text/css" media="screen">
+        .child-a,
+        .child-b {
+            height: 100px;
+        }
+
+        .child-c {
+            min-height: 100px;
+        }
+
+        .child-c-1,
+        .child-c-2 {
+            height: 100px;
+        }
+    </style>
+    <body>
+        <div class="container main-container">
+            <div class="child child-a mobile-no-padding">a</div>
+            <div class="child child-b mobile-no-padding">b</div>
+            <div class="child child-c mobile-no-padding mobile-margin tablet-no-margin desktop-margin big-screen-no-margin">
+                <div class="container container-child-c">
+                    <div class="child mobile-no-padding child-c-1">c1</div>
+                    <div class="child mobile-no-padding child-c-2">c2</div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
